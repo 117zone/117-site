@@ -26,7 +26,7 @@ jobs:
       uses: bcomnes/deploy-to-neocities@master # dont use master in production
       with:
         api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
-        cleanup: true
+        cleanup: false
         dist_dir: publish
         protected_files: 'dropbox/*'
         neocities_supporter: true # set this to true if you have a supporter account and want to bypass unsuported files filter.
