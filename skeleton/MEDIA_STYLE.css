@@ -1,0 +1,280 @@
+body {
+  background-color: #011627;
+  background: repeat url('https://117.zone/assets/BG/sunmoon.jpeg');
+  background-size: 300px;
+  color: #7F889E;
+} 
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #222533;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #222533;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+  }
+img {
+  filter: sepia(70%);
+  transition:  ease-in-out 1s;
+}
+  img:hover {
+    filter: sepia(0%);
+  }
+/* ---------------------------------------------containers-------------------------------------------------------------- */
+ 
+  .box, .aside, .half {
+      font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #d6dedf;
+    background: #100c09;
+    border: 4px double #c2875f;
+    box-shadow: 5px 5px 10px #100c09a2;
+  } 
+  
+/*----------------------------------------------------------------link styling---------------------------------------------------------------------------------*/
+
+
+ main a:visited {
+    color: #ffffff;
+  
+    
+  }
+  
+   main a:hover {
+    color: #2EC4B6;
+    text-shadow: 1px 1px #000;
+    animation: none;
+  
+  }
+  
+   main a:link {
+   
+     color: #4c9972;
+     font-size: 14px;
+     font-family: 'Bebas Neue', sans-serif;
+     text-decoration: none;
+     text-shadow: #720324 1px 1px 0px;
+     
+   }
+  
+   h1,
+   h2,
+   h3 {
+     font-family: 'Montserrat Alternates', sans-serif;
+     font-weight: 400;
+     color: #c0a767;
+     margin: 10px 0px 10px;
+     text-shadow: #fffdec 1px 1px 0px, #100c09 -1px -1px 0px;
+     border-bottom: 4px double #c2875f;
+     padding: 5px;
+   }
+   h3 {
+    border-bottom: 4px double #ffffff;
+  
+   }
+   h1, h2{
+    text-align: left;
+     background: url('https://117.zone/assets/GIFS/sun.gif') no-repeat, url('https://117.zone/assets/BG/h2cwYOE.gif');
+     background-size: auto, auto;
+     background-position: right 10px top -50px, center;
+     
+   }
+   h1 {
+      
+      font-size: 40px;
+         margin:  -10px -5px 10px;
+         background: url('https://117.zone/assets/GIFS/moon24twirling.gif') no-repeat, url('https://117.zone/assets/BG/h2cwYOE.gif');
+         background-size: auto, auto;
+         background-position: right 10px top -10px, center;
+   }
+  
+  h2 {
+  
+    font-size: 30px;
+    margin: -10px -5px 10px;
+    
+  }
+  
+aside li {
+  list-style-type: none;
+  border-bottom: 4px double #c2875f;
+  background: #17213f;
+
+
+  margin-left: -30px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  border: solid 1px #c2875f;
+  border-bottom: 4px double #c2875f;
+}
+
+aside a:link {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Montserrat Alternates', serif;
+  font-weight: 400;
+  text-decoration: none;
+   
+ 
+   
+
+}
+aside a:hover {
+  color: #4c9972;
+}
+
+strong {
+  font-weight: 400;
+  color: #c2875f;
+  font-family: 'Montserrat Alternates', serif;
+  font-size: 20px;
+}
+/* ---------------------------------------- ezgallery-------------------------------------------------------*/
+
+  .combine{
+    width: 410px;
+    height: 300px;
+    margin: 10px ;
+    text-align: center;
+    background: #011627;
+    border: solid 1px #c2875f;
+    padding: 2px;
+    }
+
+  .ezgallery.montage {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .ezgallery.montage img {
+    width: 400px;
+    height: 200px;
+    flex: auto;
+    margin: 0 5px 5px 0;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  
+  .ezgallery.horizontal {
+    display: grid;
+    grid-gap: 5px;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+  }
+  
+  .ezgallery.horizontal a {
+    text-align: center;
+  }
+  
+  .ezgallery.horizontal img {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 5px 5px 0;
+    max-width: 400px;
+    max-height: 200px;
+    object-fit: contain;
+    object-position: left;
+  }
+  
+
+
+  /*---------------------------------------------------------------assorted other stuff--------------------------------------------------------------------------------*/
+  /*updates, status cafe*/
+  #statuscafe {
+    padding: .5em;
+    background: #181D2A85;
+    border: 1px dashed #D0D3E1;
+    margin: 1em 1em 1em 1em;
+  }
+  
+  #statuscafe-username {
+    margin-bottom: .5em;
+  }
+  
+  #statuscafe-content {
+    margin: 1em 1em 1em 1em;
+  }
+  
+  /*images that need the animation*/
+  
+  .grow {
+    transition: all 0.4s ease-in-out;
+  
+    background: none;
+  }
+  
+  .grow:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  
+  .speen {
+    transition: all 2s ease-in-out;
+  }
+  
+  .speen:hover {
+    transform: rotate(360deg);
+  }
+  
+  .imagenav {
+  
+    height: 160px;
+    text-align: center;
+  }
+  
+  /*holiday!!!!!!*/
+  
+  .xmaslights {
+  
+    margin: 0 auto;
+    border-top: 22px solid;
+    border-image: url(/assets/holiday/christmas_dfgfgd.gif) 30 round;
+  
+  }
+  
+  .crimmylights {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 22px solid;
+    border-image: url(/assets/holiday/christmas_blinkinglights.gif) 30 round;
+  
+  }
+  
+  
+  
+  
+  main ul {
+    margin: 5px 60px;
+  
+  }
+  
+  main li {
+   background:#00000020;
+    list-style-type: square;
+    
+    margin-bottom: 6px;
+    margin: 5px 0px 5px 10px;
+    padding: 10px;
+  }
+
+  

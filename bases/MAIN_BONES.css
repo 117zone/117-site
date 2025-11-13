@@ -1,0 +1,331 @@
+@import url('https://117.zone/assets/carbon%20bl.otf');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: Carbon bl;
+  src: url(https://117.zone/assets/fonts/carbon%20bl.otf);
+}
+
+
+
+@font-face {
+  font-family: Metro DF;
+  src: url(https://minimal-love.art/assets/METRO-DF.TTF);
+}
+
+#more {display: none;}
+
+iframe {
+        border: none;
+    }
+  
+  .navframe {
+    width:100%;
+    height:730px; 
+    overflow: hidden;
+    }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+
+
+body {
+ 
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ---------------------------------------------containers-------------------------------------------------------------- */
+
+#container {
+    max-width: 1300px;
+    margin: 70px auto;
+    
+  }
+  
+  
+  main {
+    width: 1000px;
+    flex: 2;
+    padding: 5px;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: flex-start;
+    align-items:center;
+    justify-content: space-between;
+  }
+  
+  /*general box*/
+  .box {
+    width: 100%;
+    margin: 5px;
+    padding: 2px; 
+  }
+  
+  
+  
+  /*scrolling half size box*/
+  .half {
+    margin: 5px;
+    height: 360px;
+    width: 48%;
+    }
+  
+  .halfscroll {
+    overflow-y: scroll;
+    height: 300px;
+  
+    padding: 2px;
+  }
+  
+  .fit {
+    margin: 5px;
+    height: fit-content;
+    width: 48%;
+    }
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+ 
+  
+  #leftSidebar {
+    order: 1;
+    margin: 10px;
+  }
+  
+  
+  aside {
+   
+    max-width: 300px;
+    
+    flex: 1;
+    padding: 2px;
+  }
+  
+
+/*homepage icon navigation */
+.iconnav {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;  
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding: 0px; 
+    margin: 5px; 
+    height: auto;
+
+
+
+}
+
+/*------------------------------------------------------ez gallery--------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------index---------------------------------------------------------------------------------*/
+
+
+
+
+/*fade in stuff */
+.indexfade {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: #000000;
+  -webkit-animation: fade;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation: ifade ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ifade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes ifade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* menu text*/
+#indexstart {
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-size: 70px;
+  color: #E1E1DB;
+  animation: 2s linear infinite blink;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: .0;
+  }
+
+}
+
+
+/*logo*/
+#indexlogo {
+  pointer-events: auto;
+  width: fit-content;
+  margin: 200px auto 10px;
+
+  animation: fadescale ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes fadescale {
+  0% {
+    opacity: 0;
+    transform: scale(2.0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
+.indexcontainer {
+  pointer-events: none;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.computer {
+   pointer-events: none;
+   height:100%;
+   width: 100%;
+   position: fixed; 
+   background-size: cover;
+   background-image: url(/assets/screen.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   z-index: 90;
+}
+
+/*--------------------------------------------------------------accessability: motion + gifs? eventually-------------------------------------------------------------------------------*/
+
+@media (prefers-reduced-motion: reduce) {
+
+  body,
+  #indexlogo,
+  #indexstart,
+  .speen:hover {
+    /* Stop the animation */
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+
+
+}
+
+/*--------------------------------------------------------------phones and small displays-------------------------------------------------------------------------------*/
+
+@media(max-width:685px) {
+  
+  .container {
+    width: 100%;
+    margin-top: 0;
+
+  }
+
+  
+
+  .boxes {
+    min-width: 100%;
+  }
+
+  /*change for regular non homepage pages*/
+  .sidebars {
+    order: 2;
+  }
+
+  .sidebars li {
+    list-style-type: none;
+
+    margin: 20px;
+    font-size: 20px;
+    border-bottom: 5px double #DA8D52;
+
+    background: #181D2A85;
+  }
+}
+
+@media(max-width:800px) {
+
+  .grow {
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    background: none;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 0;
+
+  }
+
+  .iconnav {
+    height: auto;}
+    
+  .boxes,.half {
+    min-width: 100%;
+  }
+  
+  /* --------------------------------- fix order of boxes ---------------------------------------------------------------- */
+  main {
+    order: 1;
+  }
+
+ #leftSidebar {
+    order: 2; }
+    
+  aside {
+     min-width: 90%;
+  }
+}

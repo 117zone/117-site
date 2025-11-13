@@ -1,0 +1,508 @@
+@import url('https://117.zone/assets/carbon%20bl.otf');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: Carbon bl;
+  src: url(https://117.zone/assets/carbon%20bl.otf);
+}
+
+
+
+@font-face {
+  font-family: Metro DF;
+  src: url(https://minimal-love.art/assets/METRO-DF.TTF);
+}
+
+
+
+iframe {
+        border: none;
+    }
+  
+  .navframe {
+    width:100%;
+    height:800px; 
+    overflow: hidden;
+    }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+
+
+body {
+ 
+  padding: 0;
+  margin: 0;
+  background-color: #011627;
+  background: repeat bottom url('https://117.zone/assets/city_tiling.png');
+  background-attachment: fixed;
+  color: #7F889E;
+
+
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #222533;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #222533;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+/* ---------------------------------------------containers-------------------------------------------------------------- */
+
+#container {
+    max-width: 1300px;
+    margin: 70px auto;
+    
+  }
+  
+  
+  main {
+    width: 1000px;
+    flex: 2;
+    padding: 5px;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: flex-start;
+    align-items:center;
+    justify-content: space-between;
+  }
+  
+  /*general box*/
+  .box {
+    width: 100%;
+    margin: 5px;
+    padding: 2px; 
+  }
+  
+  
+  .box, .aside, .half {
+      font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #d6dedf;
+    background: #181d29;
+    border: 20px solid transparent;
+  border-image: url(https://117.zone/assets/window%20border%20test.png) 17 stretch; 
+    
+  } 
+  
+  /*scrolling half size box*/
+  .half {
+    margin: 5px;
+    height: 450px;
+    width: 48%;
+    }
+  
+  .halfscroll {
+    overflow-y: scroll;
+    height: 390px;
+  
+    padding: 2px;
+  }
+  
+  #flex {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+ 
+  
+  #leftSidebar {
+    order: 1;
+    margin: 10px;
+  }
+  
+  
+  aside {
+   
+    max-width: 300px;
+    
+    flex: 1;
+    padding: 2px;
+  }
+  
+
+/*homepage icon navigation */
+.iconnav {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;  
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding: 0px; 
+    margin: 5px; 
+    height: auto;
+
+
+
+}
+
+
+/*----------------------------------------------------------------link styling---------------------------------------------------------------------------------*/
+
+
+ a:visited {
+  color: #ffffff;
+
+  
+}
+
+ a:hover {
+  color: #2EC4B6;
+  text-shadow: 1px 1px #000;
+  animation: none;
+
+}
+
+ a:link {
+  text-decoration: none;
+   color: #ffffff;
+ 
+   font-size: 14px;
+   font-family: 'Bebas Neue', sans-serif;
+   text-shadow: #720324 1px 1px 0px;
+   
+ }
+
+ h1,
+ h2,
+ h3 {
+   font-family: 'Carbon bl', sans-serif;
+    font-weight: bold;
+   color: #ffffff;
+   margin: 10px 0px 10px;
+   text-shadow: #0066ff 1px 1px 0px, #ff3d4d -1px -1px 0px;
+   padding: 5px;
+ }
+ h3 {
+  border-bottom: 4px double #ffffff;
+
+ }
+ h1, h2{
+  text-align: left;
+   background: url('https://117.zone/assets/wintop.png') no-repeat, url('https://117.zone/assets/wintop_.png') no-repeat;
+   background-size: auto, cover;
+   background-position: right 10px top 5px, center;
+   
+ }
+ h1 {
+    
+    font-size: 30px;
+       margin: -23px -22px 10px;
+       background: url('https://117.zone/assets/wintop.png') no-repeat, url('https://117.zone/assets/wintop_.png') no-repeat;
+       background-size: auto, cover;
+       background-position: right 10px top 5px, center;
+ }
+
+h2 {
+
+  font-size: 20px;
+  margin: -23px -21px 10px;
+  
+}
+
+/*---------------------------------------------------------------assorted other stuff--------------------------------------------------------------------------------*/
+/*updates, status cafe*/
+#statuscafe {
+  padding: .5em;
+  background: #181D2A85;
+  border: 1px dashed #D0D3E1;
+  margin: 1em 1em 1em 1em;
+}
+
+#statuscafe-username {
+  margin-bottom: .5em;
+}
+
+#statuscafe-content {
+  margin: 1em 1em 1em 1em;
+}
+
+/*images that need the animation*/
+
+.grow {
+  transition: all 0.4s ease-in-out;
+
+  background: none;
+}
+
+.grow:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.speen {
+  transition: all 2s ease-in-out;
+}
+
+.speen:hover {
+  transform: rotate(360deg);
+}
+
+.imagenav {
+
+  height: 160px;
+  text-align: center;
+}
+
+/*holiday!!!!!!*/
+
+.xmaslights {
+
+  margin: 0 auto;
+  border-top: 22px solid;
+  border-image: url(/assets/holiday/christmas_dfgfgd.gif) 30 round;
+
+}
+
+.crimmylights {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 22px solid;
+  border-image: url(/assets/holiday/christmas_blinkinglights.gif) 30 round;
+
+}
+
+
+
+
+main ul {
+  margin: 5px 60px;
+
+}
+
+main li {
+ background:#00000020;
+  list-style-type: square;
+  
+  margin-bottom: 6px;
+  margin: 5px 0px 5px 10px;
+  padding: 10px;
+}
+
+li a:link {
+  font-size: 20px;
+  }
+
+
+
+/*----------------------------------------------------------------index---------------------------------------------------------------------------------*/
+
+
+
+
+/*fade in stuff */
+.indexfade {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background-color: #000000;
+  -webkit-animation: fade;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation: ifade ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ifade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes ifade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* menu text*/
+#indexstart {
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-size: 70px;
+  color: #E1E1DB;
+  animation: 2s linear infinite blink;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: .0;
+  }
+
+}
+
+
+/*logo*/
+#indexlogo {
+  pointer-events: auto;
+  width: fit-content;
+  margin: 200px auto 10px;
+
+  animation: fadescale ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes fadescale {
+  0% {
+    opacity: 0;
+    transform: scale(2.0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
+.indexcontainer {
+  pointer-events: none;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.computer {
+   pointer-events: none;
+   height:100%;
+   width: 100%;
+   position: fixed; 
+   background-size: cover;
+   background-image: url(/assets/screen.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   z-index: 90;
+}
+
+/*--------------------------------------------------------------accessability: motion + gifs? eventually-------------------------------------------------------------------------------*/
+
+@media (prefers-reduced-motion: reduce) {
+
+  body,
+  #indexlogo,
+  #indexstart,
+  .speen:hover {
+    /* Stop the animation */
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+
+
+}
+
+/*--------------------------------------------------------------phones and small displays-------------------------------------------------------------------------------*/
+
+@media(max-width:685px) {
+  
+  .container {
+    width: 100%;
+    margin-top: 0;
+
+  }
+
+  
+
+  .boxes {
+    min-width: 100%;
+  }
+
+  /*change for regular non homepage pages*/
+  .sidebars {
+    order: 2;
+  }
+
+  .sidebars li {
+    list-style-type: none;
+
+    margin: 20px;
+    font-size: 20px;
+    border-bottom: 5px double #DA8D52;
+
+    background: #181D2A85;
+  }
+}
+
+@media(max-width:800px) {
+
+  .grow {
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    background: none;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 0;
+
+  }
+
+  .iconnav {
+    height: auto;}
+    
+  .boxes,.half {
+    min-width: 100%;
+  }
+  
+  /* --------------------------------- fix order of boxes ---------------------------------------------------------------- */
+  main {
+    order: 1;
+  }
+
+ #leftSidebar {
+    order: 2; }
+    
+  aside {
+     min-width: 90%;
+  }
+}

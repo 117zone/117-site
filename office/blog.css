@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'verdana';
+    src: url('https://fonts.googleapis.com/css?family=verdana');
+    font-weight: normal;
+    font-style: normal;
+
+}
+          @font-face {
+    font-family: 'Saira Condensed', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+}
+/*------------------------main stuff-----------------------*/
+          
+            body {
+                font-family: Calibri, Arial, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+              background-color: #121212;
+                background-image: url('https://117.zone/assets/BG/background_neon_jacob-le.jpg');
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+      
+
+ #navigation{
+   background: linear-gradient(#1e262f 10%, #1e262f80 20%, transparent 90%) ;
+              
+ }    
+
+
+
+
+/*------------------------decorations/styling-----------------------*/
+/*-------------------------headers------------------*/
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    color: #cccccc;
+    line-height: initial;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+	border-bottom: 1px dotted #cccccc;
+    text-shadow: 1px 0px #b5c1f5, -1px -1px #0019ef, 0px 0px 10px #000
+}
+
+a{
+    color: #fefeff;
+    letter-spacing: 0.5px;
+    transition: all ease-in-out 0.5s;
+    text-decoration: underline #fb0189;
+}
+a:hover{
+    letter-spacing: 2px;
+ 
+}
+a:visited{
+    color: #fefeff;
+}
+
+/*image make small*/
+.smallen {
+  width: 150px;
+margin: 5px;
+  
+}
+
+            
+    

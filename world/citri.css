@@ -1,0 +1,99 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0;
+  background: #4b2920 center fixed;
+  background-size:cover;
+ background-image: url("https://117.zone/world/assets/CITRI_bg1.gif");
+ image-rendering: pixelated;
+}
+
+/*box styles*/
+.box,
+.sbox {
+padding: 8px;
+  background-color: #c264a2dc;
+  border: 1px solid #ffffff;
+box-shadow: #ffffff91 0px 0px 10px;
+image-rendering: smooth;
+}
+
+
+
+/*------------------------------------ link and other styling --------------------------------------*/
+ a:link {
+
+  color: #7a25b6;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+ a:hover {
+  color: #7a25b6;
+  text-shadow: 0 0 1px white;
+}
+
+ a:visited {
+  color: #7a25b6;
+  text-shadow: 0 0 1px white;
+}
+
+strong {
+  color: #0b73fa;
+}
+/*------------------------------------ img --------------------------------------*/
+.outline{
+  border: double 3px #ffffff;;
+}
+/*------------------------------------ list --------------------------------------*/
+ul {
+  list-style-image: url('https://117.zone/world/assets/CITRI_bullet1.gif');
+}
+ul :nth-of-type(odd){
+  list-style-image: url('https://117.zone/world/assets/CITRI_bullet2.gif');
+
+}
+/*------------------------------------ headers --------------------------------------*/
+
+
+
+h2,
+h3 {
+
+  text-align: left;
+  font-family: "KGLegoHouse", sans-serif;
+  color: #ffffff;
+  margin: -8px -8px  8px;
+
+  background: #27dff9 no-repeat;
+  border: solid 1px #fff;
+  text-shadow: #292238 2px 2px 0px;
+  background-image: url(https://117.zone/world/assets/CITRI_bg5.gif);
+  background-position: right;
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: "Powerpuff", sans-serif;
+  border: solid 1px #fff;
+  margin: -8px;
+  font-size: 45px;
+  text-shadow: #100d18 4px 4px 0px;
+  
+
+}
+
+hr {
+  height: 30px;
+  margin: -8px -8px  8px;
+  background: #ff5ab8 no-repeat;
+  border: solid 1px #fff;
+  text-shadow: #100c1a 2px 2px 0px;
+  background-image: url(https://117.zone/world/assets/CITRI_bg4.gif);
+  background-position: right;
+
+}

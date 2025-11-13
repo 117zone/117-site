@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'verdana';
+    src: url('https://fonts.googleapis.com/css?family=verdana');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Saira Condensed', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+}
+
+@import url('https://117.zone/assets/carbon%20bl.otf');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: Carbon bl;
+  src: url(https://117.zone/assets/fonts/carbon%20bl.otf);
+}
+
+
+
+@font-face {
+  font-family: Metro DF;
+  src: url(https://minimal-love.art/assets/METRO-DF.TTF);
+}
+
+
+/*------------------------main stuff-----------------------*/
+
+body {
+
+    font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: #e7dfd3;
+  
+  margin: 0;
+ 
+
+}
+
+
+
+#container {
+    margin: 50px auto 20px;
+    
+    width: 900px;
+    display: grid;
+  
+  grid-template-columns: 1fr; 
+  grid-template-rows:  50px 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "navigation"
+    "main"; 
+}
+
+
+
+main {
+ 
+    overflow-y: hidden;
+padding:10px;
+    text-align: center;
+    background-color: #1411249c;
+}
+
+nav {
+  height: 50px;
+   text-align: center;
+
+}
+
+/*------------------------------------ link and other styling --------------------------------------*/
+nav a:link {
+font-family: "Fullmoon", sans-serif;
+ font-size: 20px;
+    color: #7ad3b8;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  text-shadow: #100d18 4px 4px 0px;
+}
+
+nav a:hover {
+
+font-size: 25px;
+
+
+    }
+ a:link {
+
+  color: #7ad3b8;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+ a:visited {
+  color: #7ad3b8;
+  text-shadow: 0 0 1px white;
+}
+
+strong {
+  color: #7ad3b8;
+}
+/*------------------------------------ headers --------------------------------------*/
+
+h1,
+h2,
+h3 {
+font-family: "Fullmoon", sans-serif;
+color: #7ad3b8;
+ text-shadow: #292238 2px 2px 0px;
+  margin: 8px;
+  padding: 0px 30px;
+ 
+}
+
+h2,
+h3 {
+ font-size: 25px;
+    margin: 8px;
+  padding: 0px 30px;
+ 
+  text-shadow: #292238 2px 2px 0px;
+  
+  
+}
+h3 {
+font-family: "Fullmoon", sans-serif;
+ font-size: 20px;
+  
+  
+  
+  
+}
+
+h1 {
+ 
+  text-align: center;
+
+ 
+  
+  font-size: 45px;
+ 
+  
+
+}
+
+hr {
+  height: 30px;
+  margin: -8px -8px  8px;
+  background: #4e2b21 ;
+  border: solid 1px #000000;
+  text-shadow: #100c1a 2px 2px 0px;
+  background-image: url(https://117.zone/world/assets/LEO_bg3.png);
+}
+/*-----------------------------gallery--------------------------------------------------------*/
+ .wiggle {
+      width: 170px;
+      height: 250px;
+
+      margin: 10px;
+
+
+    }
+
+    .wiggle a:link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+
+    .ezgallery.montage img:hover {
+
+      animation: grow 1300ms;
+
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+
+    }
+
+    .wiggle:hover {
+
+      animation: wiggle 1500ms;
+
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+
+    }
+
+    @keyframes grow {
+      0% {
+        transform: scale(1.00);
+      }
+
+      25% {
+        transform: scale(1.2);
+      }
+
+      50% {
+        transform: scale(1.00);
+      }
+
+      75% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1.00);
+
+      }
+    }
+
+    @keyframes wiggle {
+      0% {
+        transform: rotate(-10deg);
+      }
+
+      50% {
+        transform: rotate(10deg);
+      }
+
+      100% {
+        transform: rotate(-10deg);
+      }
+    }
+
+    /***
+EZ Gallery by netfriend - https://netfriend.neocities.org/ez-gallery/
+Released under the Unlicense - https://unlicense.org/
+***/
+    .photoviewer-stage {
+
+      background-color: #14141c !important;
+
+    }
+
+    .ezgallery.montage {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .ezgallery.montage img {
+      width: 180px;
+      height: 250px;
+      flex: auto;
+      margin: 0 5px 5px 0;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    .ezgallery.horizontal {
+      display: grid;
+      grid-gap: 5px;
+      gap: 5px;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .ezgallery.horizontal a {
+      text-align: center;
+    }
+
+    .ezgallery.horizontal img {
+      text-align: center;
+      vertical-align: middle;
+      margin: 0 5px 5px 0;
+      max-width: 100px;
+      max-height: 100px;
+      object-fit: contain;
+      object-position: left;
+    }
+
+
+/*-----------------------------mobile screens--------------------------------------------------------*/
+@media(max-width:685px) {
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+
+
+
+
+
+}

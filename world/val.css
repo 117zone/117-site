@@ -1,0 +1,94 @@
+body {
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  height: 100%;
+  background-color: #011627;
+  background: repeat bottom url('https://117.zone/assets/BG/city_tiling.png');
+  background-attachment: fixed;
+  color: #c6cee0;
+  }
+
+/*box styles*/
+.box,
+.sbox {
+padding: 8px;
+  background-color: #181a2cd7;
+  border: 1px solid #000000;
+box-shadow: #0a071891 4px 4px;
+}
+
+
+
+/*------------------------------------ link and other styling --------------------------------------*/
+ a:link {
+
+  color: #95e9dc;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+ a:hover {
+  color: white;
+  text-shadow: 0 0 1px white;
+}
+
+ a:visited {
+  color: #5fc2b3;
+  text-shadow: 0 0 1px white;
+}
+
+strong {
+  color: #a51646;
+}
+/*------------------------------------ img --------------------------------------*/
+.outline{
+  border: double 3px #5fc2b3;
+}
+/*------------------------------------ list --------------------------------------*/
+ul {
+  list-style-image: url('https://117.zone/world/assets/VAL_bullet.png');
+}
+/*------------------------------------ headers --------------------------------------*/
+
+
+
+h2,
+h3 {
+  font-family: 'Geo', sans-serif;
+      font-weight: bold;
+     color: #ffffff;
+     margin: 10px 0px 10px;
+     
+     padding: 2px -3px;
+  
+      font-size: 25px;
+         margin: -8px -8px 10px;
+         background: url('https://117.zone/assets/wintop.png') no-repeat, url('https://117.zone/assets/wintop_.png') no-repeat;
+         background-size: auto, cover;
+         background-position: right 10px top 5px, center;
+}
+
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Metro DF", sans-serif;
+  border: solid 1px #000000;
+  margin: -8px;
+  font-size: 30px;
+  text-shadow: #5fc2b3 4px 4px 0px;
+  
+
+}
+
+hr {
+  height: 30px;
+  margin: -8px -8px  8px;
+  background: #4e2b21 ;
+  border: solid 1px #000000;
+  text-shadow: #100c1a 2px 2px 0px;
+  background-image: url(https://117.zone/world/assets/LEO_bg3.png);
+}

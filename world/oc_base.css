@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://minimal-love.art/assets/METRO-DF.TTF");
+@import url("https://minimal-love.art/assets/New%20Space.ttf");
+
+
+
+
+
+@font-face {
+  font-family: New Space;
+  src: url(https://minimal-love.art/assets/New%20Space.ttf);
+}
+
+
+
+@font-face {
+  font-family: Metro DF;
+  src: url(https://minimal-love.art/assets/METRO-DF.TTF);
+}
+
+
+
+body {
+
+  margin: 0;
+
+}
+
+/* ---------------------------------------------containers-------------------------------------------------------------- */
+
+#container {
+  width: 740px;
+  margin: 50px auto;
+
+}
+
+
+main {
+  width: 740px;
+
+  padding: 0px;
+  order: 2;
+}
+
+/*main box*/
+.box {
+  width: 500px;
+}
+
+/*side box*/
+.sbox {
+  width: 240px;
+}
+
+/*box styles*/
+.box,
+.sbox {
+  
+  margin: 2px;
+}
+
+
+#flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+#leftSidebar {
+  order: 1;
+}
+
+#rightSidebar {
+  order: 3;
+}
+
+
+/* ------------------------------------------------------------------------------gallery------------------------------------------------------------------------------------- */
+/***
+EZ Gallery by netfriend - https://netfriend.neocities.org/ez-gallery/
+Released under the Unlicense - https://unlicense.org/
+***/
+
+.ezgallery.montage {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ezgallery.montage img {
+  flex: auto;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  overflow: hidden;
+  margin: 0 5px 5px 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+.ezgallery.montage img:hover {
+
+  animation: grow 1500ms;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1.00);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.00);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1.00);
+
+  }
+}
+
+.ezgallery.horizontal {
+  display: grid;
+  grid-gap: 5px;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.ezgallery.horizontal a {
+  text-align: center;
+}
+
+.ezgallery.horizontal img {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 5px 5px 0;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+
+
+/* ------------------------------------------------------------------------------reduced motion + eventually gif freeze------------------------------------------------------------------------------------- */
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  body,
+  .speen:hover,
+  .ezgallery.montage img:hover {
+    /* Stop the animation */
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+
+
+}
+
+/* ------------------------------------------------------------------------------small screens------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 800px) {
+  #flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+  }
+
+  aside,
+  .sbox,
+  .box {
+    width: 100%;
+
+  }
+
+  #container {
+    width: 500px;
+
+  }
+
+  main {
+    order: 1;
+    width: 500px;
+  }
+
+  #leftSidebar {
+    order: 2;
+
+  }
+
+  #rightSidebar {
+    order: 3;
+  }
+
+
+  .main,
+  #leftSidebar,
+  #rightSidebar {
+    width: 100%;
+  }
+}

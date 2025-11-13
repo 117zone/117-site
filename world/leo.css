@@ -1,0 +1,91 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #bcc8c9;
+  font-size: 15px;
+  margin: 0;
+  background: #4b2920 no-repeat center fixed;
+  Background-image: url("https://117.zone/world/assets/LEO_bg1_pedro-lastra.jpg");
+  
+}
+
+/*box styles*/
+.box,
+.sbox {
+padding: 8px;
+  background-color: #181a2cd7;
+  border: 1px solid #000000;
+box-shadow: #0a071891 4px 4px;
+}
+
+
+
+/*------------------------------------ link and other styling --------------------------------------*/
+ a:link {
+
+  color: #529b90;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+ a:hover {
+  color: white;
+  text-shadow: 0 0 1px white;
+}
+
+ a:visited {
+  color: #5fc2b3;
+  text-shadow: 0 0 1px white;
+}
+
+strong {
+  color: #a51646;
+}
+/*------------------------------------ img --------------------------------------*/
+.outline{
+  border: double 3px #5fc2b3;;
+}
+/*------------------------------------ list --------------------------------------*/
+ul {
+  list-style-image: url('https://117.zone/world/assets/LEO_bullet.gif');
+}
+/*------------------------------------ headers --------------------------------------*/
+
+
+
+h2,
+h3 {
+
+  text-align: left;
+  font-family: "Geo", sans-serif;
+  color: #ffffff;
+  margin: -8px -8px  8px;
+  padding: 0px 30px;
+  background: #000000;
+  border: solid 1px #000000;
+  text-shadow: #292238 2px 2px 0px;
+  background-image: url(https://117.zone/world/assets/LEO_bg3.png);
+  
+}
+
+
+h1 {
+  color: #a51646;
+  text-align: center;
+  font-family: "Mister Firley", sans-serif;
+  border: solid 1px #000000;
+  margin: -8px;
+  font-size: 45px;
+  text-shadow: #100d18 4px 4px 0px;
+  
+
+}
+
+hr {
+  height: 30px;
+  margin: -8px -8px  8px;
+  background: #4e2b21 ;
+  border: solid 1px #000000;
+  text-shadow: #100c1a 2px 2px 0px;
+  background-image: url(https://117.zone/world/assets/LEO_bg3.png);
+}

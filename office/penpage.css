@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+@font-face {
+  font-family: 'Deutsch';
+  src: url('https://117.neocities.org/assets/Deutsch.ttf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #222533;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #222533;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+
+/*------------------------main stuff-----------------------*/
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #2c474a;
+  background-image: url('https://117.zone/office/assets/r8jQsSl.gif'), url('https://117.zone/office/assets/oNBOmqD.gif');
+  background-repeat: repeat-x, repeat;
+  background-attachment: fixed;
+}
+
+
+
+#container {
+  margin: 120px auto 0px;
+  height: 800px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "navigation navigation"
+    "main display"
+    "footer footer";
+}
+
+nav {
+  grid-area: navigation;
+  background: #160f07;
+  text-align: center;
+  padding: 2px;
+}
+
+#main {
+  grid-area: main;
+  height: 600px;
+  overflow-y: scroll;
+  background-image: url('https://117.zone/office/assets/a_angel_large3d.gif');
+  background-color: #160f07;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+ }
+
+#display {
+  grid-area: display;
+  background: #160f07;
+  height: 600px;
+  overflow-y: hidden;
+  padding: 0px;
+}
+
+#footer {
+  grid-area: footer;
+  background: #160f07;
+ }
+
+iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+ 
+}
+
+#main, #display, #footer, nav {
+  border-radius: 2%;
+  border: 2px double #90674e;
+  outline: 1px solid #b68262;
+  box-shadow: 5px 5px 2px #1c1a1de7;
+  
+}
+
+/*------------------------decorations/styling-----------------------*/
+/*-------------------------headers------------------*/
+h1,
+h2,
+h3 {
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  color: #b68262;
+  line-height: initial;
+  letter-spacing: 0.5px;
+  font-size: 26px;
+  border-bottom: 3px double #90674e;
+  background-color: #2c474a;
+  text-shadow: 1px 0px #90674e, -1px -1px #160f07;
+
+}
+h1 {
+  line-height: 40px;
+  font-size: 45px;
+  padding: 20px 120px;
+  background: url(https://117.zone/office/assets/angelflut.gif) top left no-repeat, #2c474a;
+  
+  margin-top: -10px;
+}
+a {
+  color: #fefeff;
+  letter-spacing: 0.5px;
+  transition: all ease-in-out 0.5s;
+ text-decoration: none;
+}
+
+a:hover {
+  letter-spacing: 2px;
+
+}
+
+a:visited {
+  color: #fefeff;
+}
+
+/*image make small*/
+.smallen {
+  width: 150px;
+  margin: 5px;
+
+}
+/*-----------------------------------------------------navigation-----------------------------------------------------------------------*/
+nav a {
+  color: #E0CAB9;
+  background: #2c474a;
+  border-radius: 10%;
+  box-shadow: 2px 2px 1px #4d4b4e50;
+  border: 3px double #90674e;
+  transition: all ease-in-out 0.5s;
+   font-size: 45px;
+   padding: 5px;
+margin: 3px 60px 3px;
+font-family: 'Deutsch';
+  }
+
+nav a:hover {
+  letter-spacing: 2px;
+
+}
+
+nav a:visited {
+  color: #E0CAB9;
+}
+
+
+/*---------------------- --------------------------gallery -------------------------------------------------------------------------------*/
+
+.ezgallery.montage img:hover {
+
+  animation: grow 1500ms;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+
+
+@keyframes grow {
+  0% {
+    transform: scale(1.00);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1.00);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.00);
+
+  }
+}
+
+
+/***
+EZ Gallery by netfriend - https://netfriend.neocities.org/ez-gallery/
+Released under the Unlicense - https://unlicense.org/
+***/
+.photoviewer-stage {
+
+  background-color: #14141c !important;
+
+}
+
+.ezgallery.montage {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ezgallery.montage img {
+  width: 200px;
+  height: 150px;
+  flex: auto;
+  margin: 0 5px 5px 0;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.ezgallery.horizontal {
+  display: grid;
+  grid-gap: 5px;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.ezgallery.horizontal a {
+  text-align: center;
+}
+
+.ezgallery.horizontal img {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 5px 5px 0;
+  max-width: 200px;
+  max-height: 150px;
+  object-fit: contain;
+  object-position: left;
+}
+
+
+/*-----------------------------mobile screens--------------------------------------------------------*/
+@media(max-width:685px){
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 1200px;
+  }
+
+
+
+
+
+
+}

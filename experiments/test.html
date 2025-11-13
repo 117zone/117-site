@@ -1,0 +1,680 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <title></title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&family=Tilt+Neon&display=swap");
+
+body,html{
+    padding: 0;
+    margin: 0;
+ height: 100%;
+ width: 100%;
+    font-family: "PT Sans", sans-serif;
+    color: white;
+
+    background-color: #000000;
+  }
+  @keyframes backgroundScroll {
+ 
+    to {
+      background-position: -1920px 0;
+    }
+  }  
+
+.container {  
+    width: 70%;
+height: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 13px 13px;
+    grid-auto-flow: row;
+    align-items: stretch;
+    grid-template-areas:
+      "Player1 music-player player2"
+      "Page-select Page-select Page-select";
+      background-image: url(https://117.zone/experiments/bg2.png);
+    
+      background-repeat: repeat-x;
+      animation: backgroundScroll 60s linear infinite;
+
+  }
+  
+  .Player1 { grid-area: Player1; 
+}
+  .p1 {
+    
+    background: url(https://sadhost.neocities.org/images/tiles/nurple-static-bright.gif);
+    border-radius: 1.5rem;
+    margin: 20px auto;
+    width: 380px;
+    height: 390px;
+    transform: rotate(2deg);
+    box-shadow: 0px 0px 10px#fff7e294, 0px 0px 10px#fff7e294, 0px 0px 15px #ffd3597a, 0px 0px 15px #ffd3597a;
+  }
+  .music-player { grid-area: music-player; 
+
+padding-top: 80px;}
+  
+  .player2 { grid-area: player2; 
+}
+.p2 {
+    background: url(https://sadhost.neocities.org/images/tiles/nurple-static-bright.gif);
+    border-radius: 1.5rem;
+    transform: rotate(-2deg);
+    margin: 20px auto;
+    width: 380px;
+    height: 390px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px#fff7e294, 0px 0px 10px#fff7e294, 0px 0px 15px #ffd3597a, 0px 0px 15px #ffd3597a;
+  }
+
+
+
+
+#pageselect{
+position: absolute;
+width: 700px;
+height: 100px;
+  font-size: 150px;
+  color: white;
+  -webkit-text-stroke: 4px #ffd359;
+  font-family: "Bebas Neue", sans-serif;
+ z-index: 99;
+pointer-events: none;
+left: 35%;
+top: 350px;
+}
+#pageselect span:nth-of-type(odd)
+{
+  display: inline-block;
+  transform: rotate(5deg);
+}
+#pageselect span:nth-of-type(even)
+{
+  display: inline-block;
+  transform: rotate(-5deg);
+} 
+  .Page-select {  display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 10px 15px;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "div1 div2 div3 div4 div5"
+      "div6 div7 div8 div9 div10";
+    grid-area: Page-select;
+    height: 450px;
+    margin-top: 50px;
+    
+  }
+  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
+    background: #ffd359;
+    border-radius: 1.5rem;
+    cursor: pointer; 
+    overflow:hidden;
+   box-shadow: #000000 0px 0px 8px;
+   border: #161515 solid 3px;
+  }
+
+
+
+  #pp1,
+  #pp2,
+  #p3,
+  #p4,
+  #p5,
+  #p6,
+  #p7,
+  #p8,
+  #p9,
+  #p10 {
+    border-radius: 1.5rem;
+    width: 380px;
+    height: 390px;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 61%;
+    display: none;
+    transform: rotate(-2deg);
+    animation: slide ease 1s;
+  }
+  
+  @keyframes slide {
+    0% {
+      margin-left: 10%;
+      filter: brightness(0) blur(0px);
+      background: none;
+    }
+  
+    75% {
+      margin-left: 0%;
+      filter: brightness(0) blur(0px);
+    }
+    80% {
+      margin-left: 0%;
+      filter: brightness(500) blur(5px);
+    }
+  }
+  
+  
+  .div1:hover,
+  .div2:hover,
+  .div3:hover,
+  .div4:hover,
+  .div5:hover,
+  .div6:hover,
+  .div7:hover,
+  .div8:hover,
+  .div9:hover,
+  .div10:hover {
+    background: url(https://117.zone/experiments/ebbg.gif);
+    box-shadow: 0px 0px 6px #ffd359, 0px 0px 4px #ffd359,0px 0px 2px#fff7e2, 0px 0px 2px#fff7e2;
+    border: 1px solid #ffeec1; 
+    animation: flash ease .3s;
+   
+  }
+
+  @keyframes flash {
+    0% {
+      opacity: (0);
+      
+      background-color: white;
+    }
+  15%{
+
+    filter: brightness(500);
+    background-color: white;
+  }
+    100% {
+      
+      background: url(https://117.zone/experiments/ebbg.gif);
+    }
+  }
+
+
+  /*first row*/
+  .div1 { grid-area: div1; 
+    transform: rotate(3deg);
+    position: relative;
+    top: -25px;}
+    .div1:hover + #pp1 {
+        display: block;
+      }
+  
+  .div2 { grid-area: div2; 
+    transform: rotate(3deg);
+    position: relative;
+    top: -10px;}
+    .div2:hover + #pp2 {
+        display: block;
+      }
+  
+  .div3 { grid-area: div3; 
+    position: relative;
+    top: 2px;}
+    .div3:hover + #p3 {
+        display: block;
+      }
+
+
+  .div4 { grid-area: div4; 
+     transform: rotate(-3deg);
+    position: relative;
+    top: -10px;}
+    .div4:hover + #p4 {
+        display: block;
+      }
+
+  
+  .div5 { grid-area: div5; 
+    transform: rotate(-3deg);
+    position: relative;
+    top: -25px;}
+    .div5:hover + #p5 {
+        display: block;
+      }
+  /*secnd row*/
+  
+  .div6 { grid-area: div6; 
+    transform: rotate(3deg);
+    position: relative;
+    top: -25px;}
+    .div6:hover + #p6 {
+        display: block;
+      }
+  
+  .div7 { grid-area: div7; 
+    transform: rotate(3deg);
+    position: relative;
+    top: -10px;}
+    .div7:hover + #p7 {
+        display: block;
+      }
+
+  .div8 { grid-area: div8; 
+    position: relative;
+    top: 2px;}
+    .div8:hover + #p8 {
+        display: block;
+      }
+
+
+  .div9 { grid-area: div9; 
+    transform: rotate(-3deg);
+    position: relative;
+    top: -10px;}
+    .div9:hover + #p9 {
+        display: block;
+      }
+  
+  .div10 { grid-area: div10; 
+    transform: rotate(-3deg);
+    position: relative;
+    top: -25px;
+}
+.div10:hover + #p10 {
+    display: block;
+  }
+  
+
+
+
+  a {
+    color: white;
+    text-shadow: 1px 1px #ff00ff99, -1px -1px #00ffff99;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 -0.25rem;
+    padding: 0 0.25rem;
+    font-family: "Saira Condensed", sans-serif;
+  }
+  
+  strong {
+    color: #ed64f5;
+  }
+  
+  #musicplayer {
+    width: 270px; /* width of the player */
+  }
+  
+  .songtitle {
+    padding: 5px; /* padding around song title */
+    border-bottom: 2px solid #e74492; /* border under song title */
+    display: none;
+  }
+  
+  .controls {
+    font-size: 25px !important; /* size of controls */
+  
+    text-align: center;
+    width: 100%;
+  }
+  
+  .controls td {
+    padding: 8px 5px 0px 5px; /* padding around controls */
+  }
+  
+  .seeking {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px; /* padding around seeking bar */
+  }
+  
+  .current-time {
+    padding-right: 5px;
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 75px;
+    color: white;
+    -webkit-text-stroke: 0.2rem black;
+    text-align: center;
+  }
+  
+  .total-duration {
+    padding-left: 5px;
+    display: none;
+  }
+  
+  i.fas:hover {
+    cursor: help;
+  }
+  
+  i.fas.fa-pause,
+  i.fas.fa-play,
+  i.fas.fa-forward,
+  i.fas.fa-backward {
+    color: rgb(19, 18, 19); /* color of controls */
+    text-shadow: #ffd359 1px 1px, #ffd359 -1px -1px, #ffd359 -1px 1px, #ffd359 1px -1px;
+   transition: font-size ease .5s;
+  }
+  
+  i.fas.fa-pause:hover,
+  i.fas.fa-play:hover,
+  i.fas.fa-forward:hover,
+  i.fas.fa-backward:hover {
+
+    font-size: 35px;
+  } 
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    /* background color of seeking bar - make the color same as .seeking background color */
+  }
+  
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /* settings for chrome browsers */
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px; /* thickness of seeking track */
+    cursor: help;
+    background: #ffd359; /* color of seeking track */
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    height: 10px; /* height of seeking square */
+    width: 10px; /* width of seeking square */
+    border-radius: 0px; /* change to 5px if you want a circle seeker */
+    background: #161515; /* color of seeker square */
+    cursor: help;
+    -webkit-appearance: none;
+    margin-top: -4.5px;
+  }
+  
+  /* settings for firefox browsers */
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 2px; /* thickness of seeking track */
+    cursor: help;
+    background: #ffd359; /* color of seeking track */
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    height: 10px; /* height of seeking square */
+    width: 10px; /* width of seeking square */
+    border-radius: 0px; /* change to 5px if you want a circle seeker */
+    background: #1a1819; /* color of seeker square */
+    cursor: help;
+    border: 3px #ffd359 solid;
+  }
+  @media(max-width:1500px){
+    .container {  
+      width: 100%;}
+
+      #pp1,
+      #pp2,
+      #p3,
+      #p4,
+      #p5,
+      #p6,
+      #p7,
+      #p8,
+      #p9,
+      #p10 {
+   
+        left: 66%;
+     
+      }
+
+
+
+  }
+  @media(max-width: 800px){
+
+    #pp1,
+    #pp2,
+    #p3,
+    #p4,
+    #p5,
+    #p6,
+    #p7,
+    #p8,
+    #p9,
+    #p10 {
+ 
+      left: 90%;
+   
+    }
+
+  }
+
+</style>
+<script>
+  // initiate variables
+ let track_name = document.querySelector(".songtitle");
+ 
+ let playpause_btn = document.querySelector(".playpause-track");
+ let next_btn = document.querySelector(".next-track");
+ let prev_btn = document.querySelector(".prev-track");
+let volume_slider = document.querySelector(".volume_slider");
+ let seek_slider = document.querySelector(".seek_slider");
+ let curr_time = document.querySelector(".current-time");
+ let total_duration = document.querySelector(".total-duration");
+
+ let track_index = 0;
+ let isPlaying = false;
+ let updateTimer;
+ 
+ // create new audio element
+ let curr_track = document.getElementById("music");
+ 
+ //
+ // DEFINE YOUR SONGS HERE!!!!!
+ // MORE THAN FOUR SONGS CAN BE ADDED!!
+ // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+ // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+ let track_list = [
+     {
+         name:"tekken 4 draw the waveform",
+         path:"https://117.zone/experiments/Tekken_4_Draw_the_Waveform.mp3"
+     },
+     {
+        name:"thems fightin words - chuck salamone/mason lindroth",
+        path:"https://117.zone/experiments/Thems_Fightin_Words.mp3"
+    },
+    
+     {
+         name:"endless cycle - chuck salamone/mason lindroth",
+         path:"https://117.zone/experiments/An_Endless_Cycle_Waynes_Theme.mp3"
+     },
+     
+ ];
+ //
+ //
+ //
+ //
+ //
+
+ function loadTrack(track_index) {
+     clearInterval(updateTimer);
+     resetValues();
+
+     // load a new track
+     curr_track.src = track_list[track_index].path;
+     curr_track.load();
+     
+     // update details of the track
+     track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
+
+     // set an interval of 1000 milliseconds for updating the seek slider
+     updateTimer = setInterval(seekUpdate, 1000);
+     
+     // move to the next track if the current one finishes playing 
+     curr_track.addEventListener("ended", nextTrack);
+ }
+
+ // reset values
+ function resetValues() {
+     curr_time.textContent = "0:00";
+     total_duration.textContent = "0:00";
+     seek_slider.value = 0;
+ }
+
+ // checks if song is playing
+ function playpauseTrack() {
+     if (!isPlaying) playTrack();
+     else pauseTrack();
+ }
+
+ // plays track when play button is pressed
+ function playTrack() {
+     curr_track.play();
+     isPlaying = true;
+     
+     // replace icon with the pause icon
+     playpause_btn.innerHTML = '<i class="fas fa-pause"></i>';
+ }
+
+ // pauses track when pause button is pressed
+ function pauseTrack() {
+     curr_track.pause();
+     isPlaying = false;
+     
+     // replace icon with the play icon
+     playpause_btn.innerHTML = '<i class="fas fa-play"></i>';
+ }
+
+ // moves to the next track
+ function nextTrack() {
+     if (track_index < track_list.length - 1)
+         track_index += 1;
+     else track_index = 0;
+     loadTrack(track_index);
+     playTrack();
+ }
+
+ // moves to the previous track
+ function prevTrack() {
+     if (track_index > 0)
+         track_index -= 1;
+     else track_index = track_list.length;
+     loadTrack(track_index);
+     playTrack();
+ }
+
+ // seeker slider
+ function seekTo() {
+     seekto = curr_track.duration * (seek_slider.value / 100);
+     curr_track.currentTime = seekto;
+ }
+function setVolume() {
+curr_track.volume = volume_slider.value / 100;
+}
+
+ function seekUpdate() {
+     let seekPosition = 0;
+     
+     // check if the current track duration is a legible number
+     if (!isNaN(curr_track.duration)) {
+         seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+         seek_slider.value = seekPosition;
+         
+     // calculate the time left and the total duration
+     let currentMinutes = Math.floor(curr_track.currentTime / 60);
+     let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+     let durationMinutes = Math.floor(curr_track.duration / 60);
+     let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+         
+     // adding a zero to the single digit time values
+     if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+     if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+     if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+     if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+
+     curr_time.textContent = currentMinutes + ":" + currentSeconds;
+     total_duration.textContent = durationMinutes + ":" + durationSeconds;
+   }
+ }
+ 
+ // load the first track in the tracklist
+ loadTrack(track_index);
+</script>
+  </head>
+<body>
+  <div id="pageselect"><span>page</span> <span>select</span></div>
+    <div class="container">
+        <div class="Player1"><div class="p1"><img src="https://117.zone/assets/BigYouPort.png"></div></div>
+        <div class="music-player">
+            <div class="current-time">00:00</div>
+            <div id="musicplayer">
+              <div>
+                <marquee scrollamount="8" class="songtitle"></marquee>
+              </div>
+  
+              <table class="controls">
+                <tr>
+                  <td>
+                    <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
+                  </td>
+                  <td>
+                    <div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-play"></i></div>
+                  </td>
+                  <td>
+                    <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
+                  </td>
+                </tr>
+              </table>
+  
+              <div class="seeking">
+  
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+  
+                <div class="total-duration">0:00</div>
+              </div>
+              <input type="range" min="1" max="100" value="50" class="volume_slider" onchange="setVolume()">
+              <audio id="music" src=""></audio>
+            </div>
+          </div>
+       
+        <div class="player2"><div class="p2"></div></div>
+        <div class="Page-select">
+              <!--row 1-->
+          <div class="div1"><img src="https://117.zone/experiments/select_children.png"></div>
+          <div id="pp1"><img src="https://pbs.twimg.com/media/F9EyGqWXQAAsq-0?format=jpg&name=medium"></div>
+
+          <div class="div2"><img src="https://117.zone/experiments/select_cryptb.png"></div>
+          <div id="pp2"><img src="https://pbs.twimg.com/media/FzIbT17aUAEh29x?format=png&name=small"></div>
+
+          <div class="div3"><img src="https://117.zone/experiments/select_art.png"> </div>
+          <div id="p3"><img src="https://pbs.twimg.com/media/Fk6whkGXwAAG8vv?format=jpg&name=small"></div>
+
+          <div class="div4"><img src="https://117.zone/experiments/select_4k.png"></div>
+          <div id="p4"><img src="https://pbs.twimg.com/media/F9QQp3zasAAgX3G?format=jpg&name=360x360"></div>
+
+          <div class="div5"><img src="https://117.zone/experiments/select_gigs.png"></div>
+          <div id="p5"><img src="https://pbs.twimg.com/media/F9THPWxXMAQlOtq?format=jpg&name=small"></div>
+          <!--row 2-->
+          <div class="div6"><img src="https://117.zone/experiments/select_children.png"></div>
+          <div id="p6"><img src="https://pbs.twimg.com/media/F9THPWxXMAQlOtq?format=jpg&name=small"></div>
+
+
+          <div class="div7"><img src="https://117.zone/experiments/select_about.png"></div>
+          <div id="p7"><img src="https://pbs.twimg.com/media/F9THPWxXMAQlOtq?format=jpg&name=small"></div>
+
+          <div class="div8"><img src="https://117.zone/experiments/select_cursor.png"></div>
+          <div id="p8"><img src="https://117.zone/experiments/vs.png"></div>
+
+          <div class="div9"><img src="https://117.zone/experiments/select_children.png"></div>
+          <div id="p9"><img src="https://pbs.twimg.com/media/F9THPWxXMAQlOtq?format=jpg&name=small"></div>
+
+          <div class="div10"><img src="https://117.zone/experiments/select_children.png"></div>
+          <div id="p10"><img src="https://minimal-love.neocities.org/assets/Booba%20socmed%20s.png"></div>
+        </div>
+      </div>
+      </div>
+      <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+      <script src="musicplayer.js"></script>
+</body>
+</html>

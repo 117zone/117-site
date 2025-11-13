@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'verdana';
+    src: url('https://fonts.googleapis.com/css?family=verdana');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Saira Condensed', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+}
+
+@import url('https://117.zone/assets/carbon%20bl.otf');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: Carbon bl;
+  src: url(https://117.zone/assets/fonts/carbon%20bl.otf);
+}
+
+
+
+@font-face {
+  font-family: Metro DF;
+  src: url(https://minimal-love.art/assets/METRO-DF.TTF);
+}
+
+
+/*------------------------main stuff-----------------------*/
+
+body {
+
+    font-size: 15px;
+    color: #ffffff;
+  
+    
+}
+
+
+
+#container {
+    margin: 100px auto 0px;
+    height: 800px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 0.3fr 1.7fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "nav main";
+}
+
+
+
+main {
+    height: 700px;
+    overflow-y: hidden;
+padding:5px;
+    
+}
+
+nav {
+  
+   
+
+}
+
+iframe {
+    border: none;
+  
+}
+
+
+
+
+
+/*-----------------------------mobile screens--------------------------------------------------------*/
+@media(max-width:685px) {
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+
+
+
+
+
+}
