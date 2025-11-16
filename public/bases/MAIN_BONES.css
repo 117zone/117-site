@@ -1,18 +1,3 @@
-@import url('https://117.zone/assets/carbon%20bl.otf');
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Unica+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-@font-face {
-  font-family: Carbon bl;
-  src: url(https://117.zone/assets/fonts/carbon%20bl.otf);
-}
-
-
-
-@font-face {
-  font-family: Metro DF;
-  src: url(https://minimal-love.art/assets/METRO-DF.TTF);
-}
 
 #more {display: none;}
 
@@ -42,7 +27,7 @@ body {
 /* ---------------------------------------------containers-------------------------------------------------------------- */
 
 #container {
-    max-width: 1300px;
+    max-width: 1000px;
     margin: 70px auto;
     
   }
@@ -118,8 +103,8 @@ body {
     flex-direction: row;  
     justify-content: center; 
     flex-wrap: wrap;
-    padding: 0px; 
-    margin: 5px; 
+    padding: 10px; 
+    margin: 10px; 
     height: auto;
 
 
@@ -132,120 +117,6 @@ body {
 /*----------------------------------------------------------------index---------------------------------------------------------------------------------*/
 
 
-
-
-/*fade in stuff */
-.indexfade {
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 10;
-  background-color: #000000;
-  -webkit-animation: fade;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  animation: ifade ease 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes ifade {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes ifade {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-/* menu text*/
-#indexstart {
-  width: fit-content;
-  margin: 0 auto;
-  font-family: "Lato", sans-serif;
-  font-size: 70px;
-  color: #E1E1DB;
-  animation: 2s linear infinite blink;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: .5;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  75% {
-    opacity: .5;
-  }
-
-  100% {
-    opacity: .0;
-  }
-
-}
-
-
-/*logo*/
-#indexlogo {
-  pointer-events: auto;
-  width: fit-content;
-  margin: 200px auto 10px;
-
-  animation: fadescale ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  position: relative;
-}
-
-@keyframes fadescale {
-  0% {
-    opacity: 0;
-    transform: scale(2.0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1.0);
-  }
-}
-
-.indexcontainer {
-  pointer-events: none;
-  overflow: hidden;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.computer {
-   pointer-events: none;
-   height:100%;
-   width: 100%;
-   position: fixed; 
-   background-size: cover;
-   background-image: url(/assets/screen.png);
-   background-repeat: no-repeat;
-   background-position: center;
-   z-index: 90;
-}
 
 /*--------------------------------------------------------------accessability: motion + gifs? eventually-------------------------------------------------------------------------------*/
 
@@ -266,7 +137,7 @@ body {
 
 /*--------------------------------------------------------------phones and small displays-------------------------------------------------------------------------------*/
 
-@media(max-width:685px) {
+@media(max-width:800px) {
   
   .container {
     width: 100%;

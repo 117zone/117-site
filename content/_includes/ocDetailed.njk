@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="/bases/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ characterCSS }}" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/oc_base.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.css">
+    <link rel="icon" type="image/x-icon" href="/assets/minlove.ico">
+</head>
+<body>
+    <!-----------------------------------------------------cntainer----------------------------------------------------->
+    <div id="container">
+        <div id="flex">
+           {{ content | safe }}
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.min.js"></script>
+    <script src="/gallery2.js"></script>
+</body>
+</html>

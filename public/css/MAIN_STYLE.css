@@ -1,0 +1,195 @@
+body {
+  background-color: #011627;
+  background-image: url(/assets/BG/bg2.png), url(/assets/BG/anna-gru-omL9Q8B2YCI-unsplash.png);
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #7F889E;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+ 
+  scrollbar-color: #89523a #0e0d0e;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0e0d0e;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #89523a;
+  border-radius: 10px;
+  border: 1px solid #89523a;
+}
+
+
+/* ---------------------------------------------containers-------------------------------------------------------------- */
+main {
+  background: url(/assets/BG/marb.png);
+}
+
+
+.box,
+.aside,
+.half,
+.fit {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #d6dedf;
+  background: url(/assets/BG/bgbgbgbgbg.png);
+
+  box-shadow: #000 5px 0px 5px;
+
+}
+
+main,
+.box,
+.aside,
+.half,
+.fit,
+.imagenav,
+h1,
+h2,
+#statuscafe {
+  border: 9px solid transparent;
+  border-image: url('/assets/BG/border1.png') 6 round;
+}
+
+/*----------------------------------------------------------------link styling---------------------------------------------------------------------------------*/
+
+
+a:visited {
+  color: #8f7b68;
+
+
+}
+
+a:hover {
+  color: #9cdf66;
+  text-shadow: 1px 1px #000;
+  animation: none;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: #8f7b68;
+
+  font-size: 14px;
+  font-family: 'DejaVu', serif;
+  text-shadow: #35134b 1px 1px 0px, #ffe0d6 -1px -1px 0px;
+
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #b36c4d;
+  margin: 10px 0px 10px;
+  text-shadow: #01031ac2 1px 1px 0px, #ffde72 -1px -1px 0px;
+  padding: 5px;
+  background: url(/assets/BG/marb.png);
+}
+h1 {
+ font-family: 'Fullmoon', serif;
+  font-size: 30px;
+  margin: -20px -9px 5px;
+}
+h2 {
+  font-size: 20px;
+  margin: -20px -9px 5px;
+}
+h2,
+h3 {
+ font-family: 'DejaVu', serif;
+  text-align: left;
+}
+
+
+
+
+
+/*---------------------------------------------------------------assorted other stuff--------------------------------------------------------------------------------*/
+/*updates, status cafe*/
+#statuscafe {
+  padding: .5em;
+
+  margin: 1em 1em 1em 1em;
+
+}
+
+#statuscafe-username {
+  margin-bottom: .5em;
+}
+
+#statuscafe-content {
+  margin: 1em 1em 1em 1em;
+}
+.imagenav {
+
+  height: 180px;
+  width: 120px;
+  text-align: center;
+  background-image: url(/assets/BG/marb.png);
+  margin: 5px;
+}
+.imagenav:hover {
+
+   background-image: url(/assets/BG/pic.gif);
+   background-position: left;
+}
+.iconnav img {
+height: 90px;
+
+}
+/*holiday!!!!!!*/
+
+.xmaslights {
+
+  margin: 0 auto;
+  border-top: 22px solid;
+  border-image: url(/assets/holiday/christmas_dfgfgd.gif) 30 round;
+
+}
+
+.crimmylights {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 22px solid;
+  border-image: url(/assets/holiday/christmas_blinkinglights.gif) 30 round;
+
+}
+
+
+
+
+main ul {
+  margin: 5px 60px;
+
+}
+
+main li {
+  background: #00000020;
+  list-style-type: square;
+
+  margin-bottom: 6px;
+  margin: 5px 0px 5px 10px;
+  padding: 10px;
+}
+
+li a:link {
+  font-size: 20px;
+}
+
+

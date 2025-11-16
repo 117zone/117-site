@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The web site of 117</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-    <h1>Welcome to my Website!</h1>
+    <title>Linkz</title>
+    <link href="/css/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/bases/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.css">
+    <link rel="icon" type="image/x-icon" href="/assets/117.ico">
+</head>
+<style>
+    body{
+      background-image: url(/assets/BG/bg2.png), url(/assets/BG/b.png);
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+</style>
+<body>
+    <div id="container">
+        <nav>
 
-    <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
+            <a href="/home.html">home</a> | <a href="/art/gallery.html">art</a> | <a href="/comics/nav.html">comics</a> | <a href="/art/adult_gallery.html">nsfw
+                art</a>
+            | <a href="https://home.117.zone/#commission">commission</a> | <a href="/world/nav.html">ocs</a> | <a
+                href="/resources.html">resources</a> | <a
+                href="/collections.html">collections</a>
 
-    <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
+        </nav>
 
-    <p>Here's how you can add an image:</p>
-    <img src="/neocities.png">
+        <main>
+            <div class="box">
 
-    <p>Here's how to make a list:</p>
 
-    <ul>
-      <li>First thing</li>
-      <li>Second thing</li>
-      <li>Third thing</li>
-    </ul>
+            </div>
+    </div>
+    </main>
+    <!--end of main-->
 
-    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
-  </body>
-</html>
+
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+    <script src="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.min.js"></script>
+    <script src="/gallery2.js"></script>
+</body>
