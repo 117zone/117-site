@@ -45,7 +45,7 @@ nav {
 /*------------------------------------ link and other styling --------------------------------------*/
 nav a:link {
 
-  font-size: 20px;
+  font-size: 23px;
   font-family: 'Fullmoon', serif;
   text-shadow: #35134b 1px 1px 0px, #ffe0d6 -1px -1px 0px;
  
@@ -74,7 +74,7 @@ a:link {
   text-decoration: none;
   color: #8f7b68;
 
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'DejaVu', serif;
   text-shadow: #35134b 1px 1px 0px, #ffe0d6 -1px -1px 0px;
 
