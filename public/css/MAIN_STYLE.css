@@ -1,14 +1,24 @@
 body {
-  background-color: #011627;
-  background-image: url(/assets/BG/bg2.png), url(/assets/BG/anna-gru-omL9Q8B2YCI-unsplash.png);
+  background-color: #112703;
+      background-image: url(/assets/BG/bg_left.png), url(/assets/BG/bg_right.png), url(/assets/BG/anna-gru-omL9Q8B2YCI-unsplash.png);
   background-attachment: fixed, fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: fit,cover;
+  background-position: left, right, center;
   color: #7F889E;
 }
 
+@media(max-width:800px) {
+  body {
+  background-color: #112703;
+      background-image:  url(/assets/BG/anna-gru-omL9Q8B2YCI-unsplash.png);
+  background-attachment: ixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+}
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

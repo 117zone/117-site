@@ -7,11 +7,6 @@ body {
   font-family: "Lato", sans-serif;
   color: #e7dfd3;
   margin: 0;
-  background-image: url(/assets/BG/bg2.png), url(/assets/BG/intricate-explorer-QSFH9bfW4dk-unsplash.png);
-  background-attachment: fixed, fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
 }
 
@@ -41,7 +36,7 @@ main {
 }
 
 nav {
-  height: 40px;
+  height: 60px;
   text-align: center;
   border: 8px solid transparent;
   border-image: url('/assets/BG/border1.png') 7 round;
@@ -53,13 +48,10 @@ nav {
 
 /*------------------------------------ link and other styling --------------------------------------*/
 nav a:link {
-  font-family: "Fullmoon", sans-serif;
-  font-size: 20px;
-  color: #636d11;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-  text-shadow: #100d18 4px 4px 0px;
+
+  font-size: 23px;
+  font-family: 'Fullmoon', serif;
+  text-shadow: #35134b 1px 1px 0px, #ffe0d6 -1px -1px 0px;
  
 }
 
@@ -69,70 +61,61 @@ nav a:hover {
 
 
 }
+a:visited {
+  color: #8f7b68;
+
+
+}
+
+a:hover {
+  color: #cddf66;
+  text-shadow: 1px 1px #000;
+  animation: none;
+
+}
 
 a:link {
-
-  color: #636d11;
-  font-weight: 700;
   text-decoration: none;
- 
+  color: #8f7b68;
+
+  font-size: 15px;
+  font-family: 'DejaVu', serif;
+  text-shadow: #35134b 1px 1px 0px, #ffe0d6 -1px -1px 0px;
+
 }
-
-
-
-a:visited {
-  color: #636d11;
-  text-shadow: 0 0 1px white;
-}
-
-strong {
-  color: #a09438;
-}
-
-/*------------------------------------ headers --------------------------------------*/
 
 h1,
 h2,
 h3 {
-  font-family: "Fullmoon", sans-serif;
-  color: #ac9e3a;
-  text-shadow: #292238 2px 2px 0px;
-  margin: 8px;
-  padding: 0px 30px;
-
+text-align: center;
+  font-weight: bold;
+  color: #b36c4d;
+  margin: 10px 0px 10px;
+  text-shadow: #01031ac2 1px 1px 0px, #ffde72 -1px -1px 0px;
+  padding: 5px;
+  background: url(/assets/BG/marb.png);
+  text-transform: uppercase;
 }
-
+h1 {
+ font-family: 'Fullmoon', serif;
+  font-size: 30px;
+  margin: 5px -9px 5px;
+}
+h2 {
+  font-size: 20px;
+  margin: 5px -9px 5px;
+}
+h1,
+h2 {
+  border: 9px solid transparent;
+  border-image: url('/assets/BG/border1.png') 6 round;
+}
 h2,
 h3 {
-  font-size: 25px;
-  margin: 8px;
-  padding: 0px 30px;
-
-  text-shadow: #292238 2px 2px 0px;
-
-
+ font-family: 'DejaVu', serif;
+  
 }
 
-h3 {
-  font-family: "Fullmoon", sans-serif;
-  font-size: 20px;
-
-
-
-
-}
-
-h1 {
-
-  text-align: center;
-
-
-
-  font-size: 45px;
-
-
-
-}
 
 hr {
   height: 30px;
