@@ -5,8 +5,12 @@ body {
   color: #bcc8c9;
   font-size: 15px;
   margin: 0;
-  background: #4b2920 no-repeat center fixed;
-  Background-image: url("https://117.zone/world/assets/LEO_bg1_pedro-lastra.jpg");
+  background: #1b1d20;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  Background-image: url("/assets/BG/canvas.png");
   
 }
 
@@ -14,9 +18,10 @@ body {
 .box,
 .sbox {
 padding: 8px;
-  background-color: #181a2cd7;
-  border: 1px solid #000000;
+  background-color: #1b1d20;
+  border: 5px groove #b66e4e;
 box-shadow: #0a071891 4px 4px;
+margin: 11px !important;
 }
 
 
@@ -24,7 +29,7 @@ box-shadow: #0a071891 4px 4px;
 /*------------------------------------ link and other styling --------------------------------------*/
  a:link {
 
-  color: #529b90;
+  color: #862632;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
@@ -36,17 +41,19 @@ box-shadow: #0a071891 4px 4px;
 }
 
  a:visited {
-  color: #5fc2b3;
+  color: #862632;
   text-shadow: 0 0 1px white;
 }
 
 strong {
-  color: #a51646;
+  color: #ffffff;
+   text-shadow: #292238 2px 2px 0px;
+ letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: smaller;
 }
 /*------------------------------------ img --------------------------------------*/
-.outline{
-  border: double 3px #5fc2b3;;
-}
+
 /*------------------------------------ list --------------------------------------*/
 ul {
   list-style-image: url('https://117.zone/world/assets/LEO_bullet.gif');
@@ -58,27 +65,28 @@ ul {
 h2,
 h3 {
 
-  text-align: left;
-  font-family: "Geo", sans-serif;
+  text-align: center;
+  font-family: "Lato", sans-serif;
   color: #ffffff;
   margin: 10px -8px  10px;
   padding: 0px 30px;
   background: #000000;
-  border: solid 1px #000000;
+
   text-shadow: #292238 2px 2px 0px;
-  background-image: url(https://117.zone/world/assets/LEO_bg3.png);
-  
+ letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: smaller;
 }
 
 
 h1 {
-  color: #a51646;
+  color: #862632;
   text-align: center;
-  font-family: "Mister Firley", sans-serif;
-  border: solid 1px #000000;
+  font-family: "MeltingWhip", sans-serif;
+ 
   margin: 10px;
   font-size: 45px;
-  text-shadow: #100d18 4px 4px 0px;
+  text-shadow: #141218 4px 2px 0px, #ffffff 4px 4px 0px;
   
 
 }
