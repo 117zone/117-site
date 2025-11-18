@@ -1,0 +1,105 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #e9d5ff;
+  font-size: 15px;
+  margin: 0;
+  background: #1b1d20;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  Background-image: url("/world/assets/cass_bg1.png");
+  
+}
+
+/*box styles*/
+.box,
+.sbox {
+padding: 8px;
+  background-color: #2d263ab4;
+  border: 1px solid #000000;
+
+}
+
+.box {
+   background-image: url('/world/assets/cass_h1.gif');
+  background-repeat: no-repeat;
+  background-position: top;
+  
+  background-size: contain;
+}
+
+/*------------------------------------ link and other styling --------------------------------------*/
+ a:link {
+
+  color: #ffc163;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+ a:hover {
+  color: white;
+  text-shadow: 0 0 1px white;
+}
+
+ a:visited {
+  color: rgb(255, 220, 105);
+  text-shadow: 0 0 1px white;
+}
+
+strong {
+  color: #ffa4a4;
+}
+/*------------------------------------ img --------------------------------------*/
+
+/*------------------------------------ list --------------------------------------*/
+li {
+  list-style-image: url('/world/assets/cass_bullet1.gif');
+}
+li:nth-of-type(even){
+  list-style-image: url('/world/assets/cass_bullet2.gif');
+}
+/*------------------------------------ headers --------------------------------------*/
+
+
+
+h2,
+h3 {
+
+  text-align: left;
+  font-family: "Interwoven", sans-serif;
+  color: #ffc163;
+  margin: -8px -8px  8px;
+  padding: 0px;
+  background: #140324 no-repeat;
+
+
+  
+}
+
+
+h1 {
+ 
+  text-align: center;
+  font-family: "Interwoven", sans-serif;
+
+  margin: -8px;
+  font-size: 45px;
+  text-shadow: #292238 4px 4px 0px;
+ letter-spacing: 5px;
+
+}
+
+hr {
+  height: 30px;
+  margin: -8px -8px  8px;
+
+border: none;
+
+  background-image: url('/world/assets/cass_h3.gif');
+  background-repeat: no-repeat;
+  background-position: top;
+  
+  background-size: contain;
+}
