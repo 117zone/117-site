@@ -4,19 +4,27 @@ body {
   font-size: 15px;
   margin: 0;
   height: 100%;
-  background-color: #011627;
-  background: repeat bottom url('https://117.zone/assets/BG/city_tiling.png');
-  background-attachment: fixed;
-  color: #c6cee0;
+color: antiquewhite;
   }
+
+      body{
+        background-color: #112703;
+      background-image: url(/assets/BG/bg_left.png), url(/assets/BG/bg_right.png), url(/assets/BG/anna-gru-omL9Q8B2YCI-unsplash.png);
+  background-attachment: fixed, fixed, fixed;
+  background-repeat: no-repeat;
+  background-size: auto, auto, cover;
+  background-position: left, right, center;
+}
+
 
 /*box styles*/
 .box,
 .sbox {
 padding: 8px;
-  background-color: #181a2cd7;
-  border: 1px solid #000000;
+  background-color: #1b1d20;
+  border: 5px groove #b66e4e;
 box-shadow: #0a071891 4px 4px;
+margin: 11px !important;
 }
 
 
@@ -45,50 +53,44 @@ strong {
 }
 /*------------------------------------ img --------------------------------------*/
 .outline{
-  border: double 3px #5fc2b3;
+  border: groove 5px #b36c4d;
 }
 /*------------------------------------ list --------------------------------------*/
 ul {
-  list-style-image: url('https://117.zone/world/assets/VAL_bullet.png');
+  list-style-image: url('/world/assets/VAL_bullet.gif');
 }
 /*------------------------------------ headers --------------------------------------*/
 
 
 
+h1,
 h2,
 h3 {
-  font-family: 'Geo', sans-serif;
-      font-weight: bold;
-     color: #ffffff;
-     margin: 10px 0px 10px;
-     
-     padding: 2px -3px;
-  
-      font-size: 25px;
-         margin: -8px -8px 10px;
-         background: url('https://117.zone/assets/wintop.png') no-repeat, url('https://117.zone/assets/wintop_.png') no-repeat;
-         background-size: auto, cover;
-         background-position: right 10px top 5px, center;
+text-align: center;
+  font-weight: bold;
+  color: #b36c4d;
+  margin: 10px 0px 10px;
+  text-shadow: #01031ac2 1px 1px 0px, #ffde72 -1px -1px 0px;
+  padding: 5px;
+  background: url(/assets/BG/marb.png);
+  text-transform: uppercase;
 }
-
-
 h1 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Metro DF", sans-serif;
-  border: solid 1px #000000;
-  margin: -8px;
+ font-family: 'Fullmoon', serif;
   font-size: 30px;
-  text-shadow: #5fc2b3 4px 4px 0px;
-  
-
+  margin: 5px -9px 5px;
 }
-
-hr {
-  height: 30px;
-  margin: -8px -8px  8px;
-  background: #4e2b21 ;
-  border: solid 1px #000000;
-  text-shadow: #100c1a 2px 2px 0px;
-  background-image: url(https://117.zone/world/assets/LEO_bg3.png);
+h2 {
+  font-size: 20px;
+  margin: 5px -9px 5px;
+}
+h1,
+h2 {
+  border: 9px solid transparent;
+  border-image: url('/assets/BG/border1.png') 6 round;
+}
+h2,
+h3 {
+ font-family: 'DejaVu', serif;
+  
 }

@@ -25,8 +25,8 @@ background: url(/assets/BG/marb.png) !important;
     }
 
     .comi img {
-    width: 120px;
-      height: 190px;
+    width: 170px;
+      height: 220px;
       flex: auto;
       margin: 0 5px 5px 0;
       object-fit: cover;
@@ -43,41 +43,12 @@ background: url(/assets/BG/marb.png) !important;
       animation-timing-function: ease-in-out;
 
     } 
-/*--------------------------------------*/
-    .comiw {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .comiw img {
-    width: 200px;
-      height: 290px;
-      flex: auto;
-      margin: 0 5px 5px 0;
-      object-fit: cover;
-      object-position: left;
-         border: 8px solid transparent;
-  border-image: url('/assets/BG/border1.png') 7 round;
-    }
-    
-    .comiw img:hover {
-
-      animation: grow 1300ms;
-
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-
-    } 
-
 
 .wiggle {
-  width: 160px;
-  height: 260px;
+  width: 120px;
+  height: 120px;
 
-  margin: 15px;
+  margin: 10px;
 
 
 }
@@ -151,8 +122,8 @@ Released under the Unlicense - https://unlicense.org/
 }
 
 .ezgallery.montage img {
-  width: 160px;
-  height: 210px;
+  width: 120px;
+  height: 120px;
   flex: auto;
   margin: 0 5px 5px 0;
   object-fit: cover;
