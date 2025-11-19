@@ -1,4 +1,4 @@
-@import url('https://117.zone/assets/carbon%20bl.otf');
+@import url('/assets/carbon%20bl.otf');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
@@ -48,37 +48,37 @@
 
 @font-face {
   font-family: Fullmoon;
-  src: url(https://117.zone/assets/fonts/Y1FullmoonMarch.otf);
+  src: url(/assets/fonts/Y1FullmoonMarch.otf);
 }
 
 @font-face {
   font-family: Interwoven;
-  src: url(https://117.zone/assets/fonts/Interwoven.ttf);
+  src: url(/assets/fonts/Interwoven.ttf);
 }
 
 
 @font-face {
   font-family: Mister Firley;
-  src: url(https://117.zone/assets/fonts/MisterFirley.otf);
+  src: url(/assets/fonts/MisterFirley.otf);
 }
 
 
 
 @font-face {
   font-family: Lato;
-  src: url(https://117.zone/assets/fonts/Lato-Regular.ttf);
+  src: url(/assets/fonts/Lato-Regular.ttf);
 }
 
 @font-face {
   font-family: Geo;
-  src: url(https://117.zone/assets/fonts/Geo-Regular.ttf);
+  src: url(/assets/fonts/Geo-Regular.ttf);
 }
 
 
 
 @font-face {
   font-family: Notably Absent;
-  src: url(https://117.zone/assets/fonts/NotablyAbsent.ttf);
+  src: url(/assets/fonts/NotablyAbsent.ttf);
 }
 
 
@@ -86,7 +86,7 @@
 
 @font-face {
   font-family: Carbon bl;
-  src: url(https://117.zone/assets/fonts/carbon%20bl.otf);
+  src: url(/assets/fonts/carbon%20bl.otf);
 }
 
 @font-face {
@@ -96,15 +96,30 @@
 
 @font-face {
   font-family: Another Typewriter;
-  src: url(https://117.zone/assets/fonts/atwriter.ttf);
+  src: url(/assets/fonts/atwriter.ttf);
 }
 
 @font-face {
   font-family: KGLegoHouse;
-  src: url(https://117.zone/assets/fonts/KGLegoHouse.ttf);
+  src: url(/assets/fonts/KGLegoHouse.ttf);
 }
 
 @font-face {
   font-family: Powerpuff;
-  src: url(https://117.zone/assets/fonts/Powerpuff.ttf);
+  src: url(/assets/fonts/Powerpuff.ttf);
+}
+
+@font-face {
+  font-family: Classica;
+  src: url(/assets/fonts/Classica-Bold.ttf);
+}
+
+@font-face {
+  font-family: Classica-Book;
+  src: url(/assets/fonts/Classica-Book.ttf);
+}
+
+@font-face {
+  font-family: Karina;
+  src: url(/assets/fonts/Karina.ttf);
 }
