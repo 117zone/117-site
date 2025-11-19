@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About....</title>
-    <link href="/css/background1.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/css/main.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/bases/fonts.css" rel="stylesheet" type="text/css" media="all">
-     <link href="/css/photoviewer.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.css">
-    <link rel="icon" type="image/x-icon" href="/assets/117.ico">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HOME</title>
+  <link href="/css/MAIN_STYLE.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/bases/MAIN_BONES.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/bases/fonts.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="icon" type="image/x-icon" href="assets/117.ico">
 </head>
 
 <body>
-    <div id="container">
-        <nav>
-
-            <a href="/home.html">home</a> | <a href="/art/gallery.html">art</a> | <a href="/comics/nav.html">comics</a>
-            | <a href="/art/adult_gallery.html">nsfw
-                art</a>
-            | <a href="https://home.117.zone/#commission">commission</a> | <a href="/world/nav.html">ocs</a> | <a
-                href="/resources.html">resources</a> | <a href="/collections.html">collections</a>
-
-        </nav>
-
-        <main>
-            <div class="box">
-                 
-
-          <h1>ABOUT</h1>
+  <!-----------------------------------------------------cntainer----------------------------------------------------->
+  <div id="container">
 
 
-          <img class="lefty" src="/assets/m.png" width="300px" alt="An illustration featuring the masculine version of Val’s sona. A horned man with puffy, brown hair with a white fringe, he’s wearing his usual outfit of the long black coat with gold trimmings and fur collar, red sweater, white jeans and black, high heeled boots. He’s sitting on a flight of stairs, holding his phone in one hand and his scythe in the other. The pole of the scythe is squishing against the subject’s thigh as he smiles at the camera.
-  "><br>
+    <div id="flex">
+
+
+
+      <!--ads
+                    <iframe width="230" height="230" style="border:none" src="https://dimden.neocities.org/navlink/"
+                        name="neolink" class="grow"></iframe>
+                 </div>
+-->
+
+
+
+
+      <!-----------------------------------------------------main box----------------------------------------------------->
+
+      <main>
+        <div class="box">
+
+          <h1>HOME</h1>
           <p style="text-align: center;">
           <h3>valentine | 25+ | he/him</h3>
           </p>
@@ -54,8 +58,11 @@
             art, it's 3d art, it's crafting irl, it's coding, it's graphic design.
             I think I'll die if I stop making art. </p>
 
+        </div>
 
-          <h3>socials</h3>
+        <!-- -------------------------updates--------------------------------------------------------- -->
+        <div class="half">
+          <h2>socials</h2>
 
           <p style="text-align: center;">You can find me on <a href="https://bsky.app/profile/117.zone">bluesky</a> and
             <a href="https://backloggd.com/u/117zone/">backloggd</a>
@@ -67,21 +74,81 @@
           <p style="text-align: center;"><img src="https://117.zone/assets/GIFS/earth%206.gif"
               alt="spinny computer"><img src="https://117.zone/assets/GIFS/graphics_computer.gif" alt="spinny computer">
           </p>
+
+        </div>
+
+        <!-- --------------------------------------music------------------------------------------------ -->
+        <div class="half">
+          <h2>latest tunez</h2>
+          <p style="text-align: center;"><a href="https://www.last.fm/user/valentineforevr"><img
+                src="https://lastfm-recently-played.vercel.app/api?user=valentineforevr" height="270px" /></a></p>
         </div>
 
 
-            </div>
-    
-    </main>
+        <div class="half">
+          <h2>Status</h2>
+          <div id="statuscafe">
+            <div id="statuscafe-username"></div>
+            <div id="statuscafe-content"></div>
+            <script src="https://status.cafe/current-status.js?name=117" defer></script>
+            <p style="text-align: center;"><a href="https://www.imood.com/users/117zone"><img
+                  src="https://moods.imood.com/display/uname-117zone/fg-7EDEDF/bg-10516d/imood.gif"
+                  alt="The current mood of 117zone at www.imood.com" width="90px"
+                  style="image-rendering: pixelated;"></a>
+            </p>
+          </div>
+
+
+        </div>
+
+
+
+        <!-- -----------------------------------links---------------------------------------------- -->
+        <div class="half">
+   
+          <div class="halfscroll">
+
+      
+            <br>
+            <img src="/assets/stamp_bubble.gif">
+            <img src="/assets/stamp_forget.png">
+            <img src="/assets/stamp_mmd.gif">
+            <img src="/assets/stamp_oldweb.png">
+            <img src="/assets/stamp_static.gif">
+            <img src="/assets/stamp_tamablink.png">
+            <img src="/assets/stamp_toomuchhetero.gif">
+            <img src="/assets/stamp_water.gif">
+            <img src="/assets/stamp_yumenikkieyes.gif">
+            <img src="/assets/stamp_hehim.png">            
+
+
+          </div>
+        </div>
+
+
+
+      </main>
+
+
     </div>
-    <!--end of main-->
+  </div>
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
 
-
-
-    <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal-image">
-    </div>
-    <script src="https://unpkg.com/photoviewer@3.6.2/dist/photoviewer.min.js"></script>
-    <script src="/gallery2.js"></script>
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "OLDER";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "HIDE";
+        moreText.style.display = "inline";
+      }
+    } 
+  </script>
 </body>
+
+</html>
