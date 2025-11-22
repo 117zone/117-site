@@ -48,7 +48,7 @@ main img {
 }
 /*------------------------------------ list --------------------------------------*/
 ul {
-  list-style-image: url('https://117.zone/world/assets/MOTH_arrow_ul.png');
+  list-style-image: url('/world/assets/VAL_bullet.gif');
 }
 /*------------------------------------ headers --------------------------------------*/
 
