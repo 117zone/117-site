@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>WELCOME TO 117ZONE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/117.ico">
+    <link rel="stylesheet" href="bases/fonts.css">
+    <link rel="stylesheet" href="https://zoranadragon.neocities.org/more/oc-webring/onionring.css">
+    <link rel="stylesheet" href="https://cdring.neocities.org/cdring/onionring.css">
+
+
+    <style>
+        /*----------------------------------------background stuff-----------------------------------------------------------------*/
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-size: 15px;
+            color: #fefefe;
+            font-family: 'Lato';
+        }
+
+        body {
+            background-color: #000000;
+            background-image: url(assets/BG/anna-gru-omL9Q8B2YCI-unsplash.png);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        /*----------------------------------------------------------------index---------------------------------------------------------------------------------*/
+        /*fade in stuff */
+        .indexfade {
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 10;
+            background-color: #000000;
+            -webkit-animation: fade;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-fill-mode: forwards;
+            animation: ifade ease 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes ifade {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes ifade {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            
+            margin: 10% auto;
+            /* 15% from the top and centered */
+            padding: 5px;
+        
+            width: 50%;
+            /* Could be more or less, depending on screen size */
+            font-family: 'Lato', sans-serif;
+      
+
+        }
+        @media only screen and (max-width: 800px) {
+            .modal-content {
+                width: 90%;
+        }
+    }
+.box {
+    padding: 20px;
+      border: 7px solid transparent;
+            border-image: url('/assets/BG/border1.png') 6 round;
+            background: url(/assets/BG/bgbgbgbgbg.png);
+            margin:20px;
+}
+
+        a:visited {
+            color: #8f7b68;
+
+
+        }
+
+        a:hover {
+            color: #cddf66;
+            text-shadow: 1px 1px #000;
+            animation: none;
+
+        }
+
+        a:link {
+            text-decoration: none;
+            color: #8f7b68;
+
+            font-size: 15px;
+            font-family: 'DejaVu', serif;
+            text-shadow: #35134b 1px 1px 0px, #ffe0d6 -1px -1px 0px;
+
+        }
+
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: #b36c4d;
+            margin: 10px 0px 10px;
+            text-shadow: #01031ac2 1px 1px 0px, #ffde72 -1px -1px 0px;
+            padding: 5px;
+            background: url(/assets/BG/marb.png);
+            text-transform: uppercase;
+            font-family: 'Fullmoon', serif;
+            font-size: 30px;
+            margin: -40px -25px 5px;
+            border: 9px solid transparent;
+            border-image: url('/assets/BG/border1.png') 6 round;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 5px -9px 5px;
+        }
+
+
+
+
+        /* ----------------------------------------------------------------------------- content ---------------------------------------------------------------------*/
+
+        #icontainer {
+            margin: 0px;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+
+        #index {
+            margin: 90px auto;
+            width: 700px;
+
+            animation: fadescale ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+
+
+        @keyframes fadescale {
+            0% {
+                opacity: 0;
+
+            }
+
+            100% {
+                opacity: 1;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="indexfade">
+    </div>
+
+    <div id="icontainer">
+        <main id="index">
+            <div id="logo">
+                <p style="text-align: center;"><img src="https://117.zone/assets/117logo_3danimated_july2024.gif"></p>
+            </div>
+
+
+
+
+
+            <!-- The Modal -->
+            <div id="info" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+<div class="box">
+                    <p style="text-align: right;"> </p>
+                    <h1>WELCOME TO 117ZONE <span class="close"
+                            style="font-size: 30px; text-align: right;">&times;</span></h1>
+
+                    <p style="text-align: center;"> This site is <strong>mobile friendly/</strong>responsive, and has
+                        sort of semantic html, and
+                        <strong> alt text</strong> most places.
+                    </p>
+
+                    <p style="text-align: center;"> It also has <strong>NSFW</strong> content too (though it's in
+                        specific pages/spaces, so it's
+                        avoidable) but that means </p>
+                    <p style="text-align: center;">if you click enter... you agree you are 18+ or the age of majority in
+                        your
+                        country.</p>
+
+
+                    <p style="text-align: center;"><a href="/home.html" style="font-size: 30px;">Enter?</a></p>
+
+</div>
+<div class="box">
+                    <div
+                        style="display: flex; flex-wrap: wrap; text-align: center; justify-content: space-evenly; align-items: center;">
+                        <div style="display: flex; align-items: center;"><a
+                                href="https://kink-and-fetish-webring.netlify.app/117/previous">&larr;</a><a
+                                href="https://kink-and-fetish-webring.netlify.app/"><img
+                                    src="https://kink-and-fetish-webring.netlify.app/kafw_logo.png"></a> <a
+                                href="https://kink-and-fetish-webring.netlify.app/117/next">&rarr; </a></div>
+                        <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#7f192e"
+                            type="image/svg+xml" style="width: 70px; height: 70px;"></object>
+                        <div><a href="https://hotlinewebring.club/117/previous"> &larr; </a> <a
+                                href="https://hotlinewebring.club/">HOTLINE WEBRING</a>
+                            <a href="https://hotlinewebring.club/117/next"> &rarr; </a>
+                        </div>
+                        <div id='CultofUsakumya'>
+                            <script type="text/javascript" src="https://mal.ophanimkei.com/lolitaonionring.js"></script>
+                            <script type="text/javascript" src="https://mal.ophanimkei.com/lolitawidget6.js"></script>
+                        </div>
+                        <div>
+                            <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+                        </div>
+                        <div id="transring" style="width: 200px;">
+                            <script src="https://transring.neocities.org/ring.js" data-widget="cloud"></script>
+                        </div>
+
+                        <div id="wwbtn"><a href="https://webmasterwebring.netlify.app"><img
+                                    src="https://file.garden/ZrZSgsrYfQXsO7QH/ww/50x50.png"></a><br><a
+                                href="https://webmasterwebring.netlify.app?117-previous">prev</a> <a
+                                href="https://webmasterwebring.netlify.app?117-random">?</a> <a
+                                href="https://webmasterwebring.netlify.app?117-next">next</a>
+                        </div>
+                        <div style="
+  background-image:
+  linear-gradient(to top,#000,#00000000),
+  url('https://www.virtuagirl.net/STORAGEROOM/xxxholic.png');
+  background-size:cover;
+  display:grid;
+  height:80px;
+  width:180px;
+  color:#fff;
+  font-family:'Times New Roman';
+  font-size:18px">
+                            <span style="display:inline-block;align-self:end;justify-self:center;text-align:center">
+                                <a style="text-decoration:none;color:#fff"
+                                    href="https://www.virtuagirl.net/webring.htm#ZNE0">⇐</a>
+
+                                <a style="text-decoration:none;color:#fff"
+                                    href="https://www.virtuagirl.net/yuriwebring">YAOI WEBRING</a>
+                                <a style="text-decoration:none;color:#fff"
+                                    href="https://www.virtuagirl.net/webring.htm#ZNE1">⇒</a>
+
+                            </span>
+                        </div>
+
+                        <!-- CDRING START -->
+                        <div id='cdr'>
+                            <script type="text/javascript"
+                                src="https://cdring.neocities.org/cdring/onionring-variables.js"></script>
+                            <script type="text/javascript"
+                                src="https://cdring.neocities.org/cdring/onionring-widget.js"></script>
+                        </div>
+                        <!-- CDRING END -->
+<div id='codec-ring' style="max-width: 300px;">
+<script type="text/javascript" src="https://arillscorner.nekoweb.org/codec-ring/onionring-variables.js"></script>
+<script type="text/javascript" src="https://arillscorner.nekoweb.org/codec-ring/onionring-widget.js"></script>
+</div>
+                        <div id=OCverse>
+                            <script type=text/javascript
+                                src=https://zoranadragon.neocities.org/more/oc-webring/onionring-variables.js></script>
+                            <script type=text/javascript
+                                src=https://zoranadragon.neocities.org/more/oc-webring/onionring-widget-simple.js></script>
+                        </div>
+                        </p>
+                    </div>
+</div>
+                </div>
+        </main>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("info");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("logo");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        } 
+    </script>
+</body>
+
+</html>
