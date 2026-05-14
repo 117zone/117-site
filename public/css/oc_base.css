@@ -99,8 +99,8 @@ Released under the Unlicense - https://unlicense.org/
 
 .ezgallery.montage img {
   flex: auto;
- width: 100px;
-      height: 150px;
+ width: 140px;
+      height: 140px;
       flex: auto;
       margin: 0 5px 5px 0;
       object-fit: cover;
@@ -157,8 +157,8 @@ Released under the Unlicense - https://unlicense.org/
   text-align: center;
   vertical-align: middle;
   margin: 0 5px 5px 0;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 140px;
+  max-height: 140px;
   object-fit: contain;
   object-position: bottom;
 }
