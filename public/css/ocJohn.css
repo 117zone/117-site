@@ -1,0 +1,90 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #f1daba;
+  font-size: 15px;
+  margin: 0;
+  background: #4b2920 repeat center fixed;
+  Background-image: url("/world/assets/john_bg1.png"), linear-gradient(0deg, rgb(78, 43, 33) 0%, rgba(65,28,18,1) 20%, rgba(65,28,18,1) 100%);
+  
+}
+
+/*box styles*/
+.box,
+.sbox {
+padding: 8px;
+  background-color: #41333ee5;
+  border: 5px groove #b3c1c2;
+
+
+}
+
+
+
+/*------------------------------------ link and other styling --------------------------------------*/
+ a:link {
+
+  color: #BA7493;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+ a:hover {
+  color: white;
+  text-shadow: 0 0 1px white;
+}
+
+ a:visited {
+  color: #BA7493;
+  text-shadow: 0 0 1px white;
+}
+
+strong {
+  color: #BA7493;
+}
+/*------------------------------------ img --------------------------------------*/
+main img {
+  border: dashed 2px #292238;
+}
+/*------------------------------------ list --------------------------------------*/
+ul {
+  list-style-image: url('/world/assets/VAL_bullet.gif');
+}
+/*------------------------------------ headers --------------------------------------*/
+
+
+
+h2,
+h3 {
+
+  text-align: left;
+  font-family: "Badboy", sans-serif;
+  color: #5c4c46;
+  margin: -8px -8px  8px;
+  padding: 10px;
+  background-image: url(/assets/BG/wall.jpeg);
+  
+}
+
+
+h1 {
+
+  text-align: center;
+  font-family: "Badboy", sans-serif;
+  color: #5c4c46;
+  margin: -8px;
+  font-size: 45px;
+  padding: 10px;
+  text-shadow: #292238 4px 4px 0px;
+  background: #4e2b21;
+background-image: url(/assets/BG/wall.jpeg);
+}
+
+hr {
+  height: 30px;
+  margin: -8px -8px  8px;
+  background: #4e2b21 no-repeat;
+  border-bottom: dashed 2px #97613d;
+  text-shadow: #292238 2px 2px 0px;
+  background-image: url(https://117.zone/world/assets/MOTH_arrow_header.png);
+}
