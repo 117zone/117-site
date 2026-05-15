@@ -8,88 +8,94 @@
 .photoviewer-modal {
   color: #fff !important;
 }
-.photoviewer-header,.photoviewer-footer {
-    border: 7px solid transparent;
-border-image: url('/assets/BG/border1.png') 6 round;
-background: url(/assets/BG/marb.png) !important;
+
+.photoviewer-header,
+.photoviewer-footer {
+  border: 7px solid transparent;
+  border-image: url('/assets/BG/border1.png') 6 round;
+  background: url(/assets/BG/marb.png) !important;
 }
 
 
 
- .comi {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
+.comi {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-    .comi img {
-    width: 120px;
-      height: 190px;
-      flex: auto;
-      margin: 0 5px 5px 0;
-      object-fit: cover;
-      object-position: bottom;
-         border: 8px solid transparent;
+.comi img {
+  width: 210px;
+  height: 260px;
+  flex: auto;
+  margin: 0 5px 5px 0;
+  object-fit: cover;
+  object-position: bottom;
+  border: 8px solid transparent;
   border-image: url('/assets/BG/border1.png') 7 round;
-    }
-    
-    .comi img:hover {
+}
 
-      animation: grow 1300ms;
+.comi img:hover {
 
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
+  animation: grow 1300ms;
 
-    } 
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
 /*--------------------------------------*/
-    .comiw {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
+.comiw {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-    .comiw img {
-    width: 200px;
-      height: 290px;
-      flex: auto;
-      margin: 0 5px 5px 0;
-      object-fit: cover;
-      object-position: left;
-         border: 8px solid transparent;
+.comiw img {
+  width: 210px;
+  height: 260px;
+  flex: auto;
+  margin: 0 5px 5px 0;
+  object-fit: cover;
+  object-position: left;
+  border: 8px solid transparent;
   border-image: url('/assets/BG/border1.png') 7 round;
-    }
-    
-    .comiw img:hover {
+}
 
-      animation: grow 1300ms;
+.comiw img:hover {
 
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
+  animation: grow 1300ms;
 
-    } 
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
 
 
 .wiggle {
   width: 160px;
-  height: 260px;
-
+  height: 200px;
   margin: 15px;
-
-
 }
 
-.wiggle a:link {
+.wigglecaption {
+  width: 200px;
+  height: 270px;
+  margin: 15px;
+}
+
+.wiggle, .wigglecaption a:link {
   color: #fff;
   text-decoration: none;
   font-size: 17px;
 }
 
 
-.wiggle:hover {
+.wiggle:hover, .wigglecaption:hover {
 
   animation: wiggle 1500ms;
 
@@ -157,7 +163,7 @@ Released under the Unlicense - https://unlicense.org/
   margin: 0 5px 5px 0;
   object-fit: cover;
   object-position: bottom;
-   border: 8px solid transparent;
+  border: 8px solid transparent;
   border-image: url('/assets/BG/border1.png') 7 round;
 }
 
@@ -171,6 +177,7 @@ Released under the Unlicense - https://unlicense.org/
   animation-timing-function: ease-in-out;
 
 }
+
 .ezgallery.horizontal {
   display: grid;
   grid-gap: 5px;
