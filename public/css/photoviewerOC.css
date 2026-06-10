@@ -8,66 +8,70 @@
 .photoviewer-modal {
   color: #fff !important;
 }
-.photoviewer-header,.photoviewer-footer {
-    border: 7px solid transparent;
-border-image: url('/assets/BG/border1.png') 6 round;
-background: url(/assets/BG/marb.png) !important;
+
+.photoviewer-header,
+.photoviewer-footer {
+  border: 7px solid transparent;
+  border-image: url('/assets/BG/border1.png') 6 round;
+  background: url(/assets/BG/marb.png) !important;
 }
 
 
 
- .comi {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
+.comi {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
 
-    .comi img {
-    width: 170px;
-      height: 220px;
-      flex: auto;
-      margin: 0 5px 5px 0;
-      object-fit: cover;
-      object-position: bottom;
-         border: 8px solid transparent;
+.comi img {
+  width: 170px;
+  height: 220px;
+  flex: auto;
+
+  object-fit: cover;
+  object-position: bottom;
+  border: 8px solid transparent;
   border-image: url('/assets/BG/border1.png') 7 round;
-    }
-    
-    .comi img:hover {
+}
 
-      animation: grow 1300ms;
+.comi img:hover {
 
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
+  animation: grow 1300ms;
 
-    } 
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
 
 .wiggle {
   width: 140px;
   height: 140px;
 
-  margin: 10px;
+  margin: 5px 10px;
 
 
 }
+
 .wigglecaption {
   width: 140px;
-  height: 180px;
-
-  margin: 10px;
-
-
+  height: 190px;
+  margin-bottom: 15px;
 }
-.wiggle, .wigglecaption a:link {
+
+.wiggle,
+.wigglecaption a:link {
   color: #fff;
   text-decoration: none;
   font-size: 17px;
 }
 
 
-.wiggle:hover, .wigglecaption:hover {
+.wiggle:hover,
+.wigglecaption:hover {
 
   animation: wiggle 1500ms;
 
@@ -135,7 +139,7 @@ Released under the Unlicense - https://unlicense.org/
   margin: 0 5px 5px 0;
   object-fit: cover;
   object-position: bottom;
-   border: 3px solid transparent;
+  border: 3px solid transparent;
   border-image: url('/assets/BG/border1.png') 7 round;
 }
 
@@ -149,6 +153,7 @@ Released under the Unlicense - https://unlicense.org/
   animation-timing-function: ease-in-out;
 
 }
+
 .ezgallery.horizontal {
   display: grid;
   grid-gap: 5px;
