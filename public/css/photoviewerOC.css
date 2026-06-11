@@ -1,7 +1,5 @@
 .photoviewer-stage {
-
   background-color: #14141c !important;
-
   background: url(/assets/BG/bgbgbgbgbg.png);
 }
 
@@ -16,8 +14,7 @@
   background: url(/assets/BG/marb.png) !important;
 }
 
-
-
+/*                  comic                      */
 .comi {
   display: flex;
   flex-flow: row wrap;
@@ -31,7 +28,6 @@
   width: 170px;
   height: 220px;
   flex: auto;
-
   object-fit: cover;
   object-position: bottom;
   border: 8px solid transparent;
@@ -39,21 +35,45 @@
 }
 
 .comi img:hover {
-
   animation: grow 1300ms;
-
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-
 }
 
+
+/*                  oc page                     */
+.page {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.page img {
+  width: 140px;
+  height: 140px;
+  flex: auto;
+  margin: 0 5px 5px 0;
+  object-fit: cover;
+  object-position: bottom;
+  border: 8px solid transparent;
+  border-image: url('/assets/BG/border1.png') 7 round;
+}
+
+.page img:hover {
+  animation: grow 1300ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+/*                                   animation                                         */
 .wiggle {
   width: 140px;
   height: 140px;
-
   margin: 5px 10px;
-
-
 }
 
 .wigglecaption {
@@ -69,15 +89,11 @@
   font-size: 17px;
 }
 
-
 .wiggle:hover,
 .wigglecaption:hover {
-
   animation: wiggle 1500ms;
-
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-
 }
 
 @keyframes grow {
@@ -143,15 +159,10 @@ Released under the Unlicense - https://unlicense.org/
   border-image: url('/assets/BG/border1.png') 7 round;
 }
 
-
-
 .ezgallery.montage img:hover {
-
   animation: grow 1300ms;
-
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-
 }
 
 .ezgallery.horizontal {
