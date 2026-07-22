@@ -110,16 +110,18 @@ h3 {
   margin: 10px 0px 10px;
   text-shadow: #01031ac2 1px 1px 0px, #ffde72 -1px -1px 0px;
   padding: 5px;
-  background: url(/assets/BG/marb.png);
+
 }
 h1 {
  font-family: 'Fullmoon', serif;
   font-size: 30px;
   margin: -20px -9px 5px;
+    background: url(/assets/BG/marb.png);
 }
 h2 {
   font-size: 20px;
   margin: -20px -9px 5px;
+    background: url(/assets/BG/marb.png);
 }
 h2,
 h3 {
