@@ -128,6 +128,14 @@ hr {
   text-shadow: #100c1a 2px 2px 0px;
   background-image: url(https://117.zone/world/assets/LEO_bg3.png);
 }
+/*-----------------------------------------------------------------------------------------*/
+.center {
+text-align: center;
+}
+.adopt img {
+  text-align: center;
+  width: 90%;
+}
 /*-----------------------------list--------------------------------------------------------*/
 main ul {
   margin: 5px 60px;
@@ -222,10 +230,4 @@ height: 90px;
     width: 90%;
     height: auto;
   }
-
-
-
-
-
-
 }
